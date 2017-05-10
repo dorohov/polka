@@ -1,0 +1,123 @@
+<link href="{{url-path-css}}/scrollr-position.css" rel="stylesheet" type="text/css" />
+<script src="{{url-path-js}}/skrollr.min.js" ></script>
+<script src="{{url-path-js}}/skrollr.menu.js"></script>
+<script type="text/javascript">
+	$(window).on('resize', function(){
+		var params = {};
+		if(screenJS.isMDH()){  
+			params = {
+				header: 				800,
+				advantages: 			870,
+				header__flat: 			600,
+				composition: 			1050,
+				icon__down: 			1700,
+		    	equipmen: 				1000,
+		    	equipmen__item: 		1250,
+		    	access: 				1750,//1850
+		    	access__item: 			1750,//1850
+		    	safety: 				2400,//2700,
+		    	safety__item: 			2400,//2700,
+		    	beautification: 		2900,//3200,
+		    	beautification__item: 	2900,//3200,
+		    	parking: 				3350,//3750,
+		    	parking__item: 			3350,//3750,
+		    	backlight: 				3830,//4330,
+		    	flat: 					4300,//4960,
+		    	complex: 				4400,//5100,
+		    	locaion: 				4900,//5800,
+		    	map: 					5150,//6050,
+		    	contacts: 				5050,//6050,
+		    	contacts__item: 		5200,//6150,
+		    	footer: 				5200,//6150,
+
+		    	round1: 				1000,
+		    	round2: 				1350,
+		    	round3: 				1850,//1950,
+		    	round4: 				2750,//2850,
+		    	round5: 				4260,//4900,
+		    	round6: 				4310,//4950,
+		    	round7: 				5300,//6000,
+
+		    	rect1: 					1000,
+		    	rect2: 					650,//850,
+		    	rect3: 					2000,
+		    	rect4: 					2050,//2350,
+		    	rect5: 					2625,
+		    	rect6: 					2800,//3000,
+		    	rect7: 					3200,//3400,
+		    	rect8: 					3280,//3550,
+		    	rect9: 					3350,//3880,
+		    	rect10: 				4900,//5800,
+		    	rect11: 				4730,//5590,
+		    	rect12: 				4430//5230
+		    }
+		} else {
+			params = {
+				header: 				800,
+				advantages: 			870,
+				header__flat: 			610,
+				composition: 			1050,
+				icon__down: 			1700,
+		    	equipmen: 				1000,
+		    	equipmen__item: 		1250,
+		    	access: 				1850,//
+		    	access__item: 			1850,
+		    	safety: 				2700,
+		    	safety__item: 			2700,
+		    	beautification: 		3200,
+		    	beautification__item: 	3200,
+		    	parking: 				3750,
+		    	parking__item: 			3750,
+		    	backlight: 				4330,
+		    	flat: 					4960,
+		    	complex: 				5100,
+		    	locaion: 				5800,
+		    	map: 					6050,
+		    	contacts: 				6050,
+		    	contacts__item: 		6150,
+		    	footer: 				6150,
+
+		    	round1: 				1000,
+		    	round2: 				1350,
+		    	round3: 				1950,
+		    	round4: 				2850,
+		    	round5: 				4900,
+		    	round6: 				4950,
+		    	round7: 				6000,
+
+		    	rect1: 					1000,
+		    	rect2: 					850,
+		    	rect3: 					2000,
+		    	rect4: 					2350,
+		    	rect5: 					2625,
+		    	rect6: 					3000,
+		    	rect7: 					3400,
+		    	rect8: 					3550,
+		    	rect9: 					3880,
+		    	rect10: 				5800,
+		    	rect11: 				5590,
+		    	rect12: 				5230
+		    }
+		}
+
+		/*if(!device.mobile() && !device.tablet()){
+			var s = skrollr.init({
+				edgeStrategy: 'set',
+				constants: params,
+			});
+			skrollr.menu.init(s, {});
+		}*/
+		//var s = null;
+		if(!screenJS.device()) {	
+			var s = skrollr.init({
+				edgeStrategy: 'set',
+				//mobileDeceleration : 1,
+				constants: params,
+			});		
+			skrollr.menu.init(s, {});
+		} else {
+			//skrollr.refresh();
+			//$('.skrollable').removeClass('skrollable').removeAttr("style");
+		}
+	});
+</script>	

@@ -1,0 +1,52 @@
+.error-page{}
+._ep__{
+	&panel{
+		border: 1px solid @green;
+		
+		@media @media-device{
+			padding: 25px 30px;
+			max-width: 490px;
+			margin: 0 auto;
+		}
+		@media @media-screen{padding: 6.5vw 7vw;}
+		.page-header-block{
+			@media @media-screen{margin-bottom: 1vw}
+		}
+		.page-header__heading{
+			font-weight: 800;
+			@media @media-screen{
+				span{display: block;}
+				.calcFontSize(30, 60, 320, 1680);
+				.calcLineHeight(30, 60, 320, 1680);
+			}
+		}
+	}
+	&row{
+		margin-top: -30px;
+		flex-wrap: wrap;
+	}
+	&cols{
+		padding-top: 30px;
+		&.cols-7{			
+			@media @media-device{.makeCols(12, 12);}
+			@media @media-screen{.makeCols(7, 12);}
+		}
+		&.cols-5{			
+			@media @media-device{.makeCols(12, 12);}
+			@media @media-screen{.makeCols(5, 12);}
+		}
+	}
+	&num{
+		color: @green;
+		font-family: @bague;
+		font-weight: 800;
+		.calcFontSize(120, 330, 320, 1680);
+		.calcLineHeight(70, 260, 320, 1680);
+	}
+	&note{
+		.calcFontSize(18, 23, 320, 1680);
+		.calcLineHeight(22, 26, 320, 1680);	
+		margin-bottom: 25px;	
+	}
+
+}

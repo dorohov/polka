@@ -1,0 +1,98 @@
+.footer-site{
+	position: relative;
+	z-index: 4;
+	font-family: @footer-ff;
+	font-size: @footer-fs - 2px; //14
+	line-height: @footer-lh - 2px; //22
+    font-weight: 300;
+    color: @footer-color;
+    background-color: @footer-bg;
+	@media @media-size-xxl{
+		font-size: @footer-fs; //16
+		line-height: @footer-lh; //24
+	}
+	a{
+		&, &:hover, &:focus{color: @footer-color;}
+	}
+	&.second{
+		.footer__container{
+			padding-top: 0px;
+		}
+	}
+	&.include-navbar-blog{
+		@media @media-size-xs{
+			padding-bottom: 55px;
+		}
+	}
+}
+.footer__{
+	&container{
+		padding-top: 25px; padding-bottom: 25px;
+		@media @media-size-xs{padding-bottom: 10px;}
+	}
+	&row{
+		justify-content: space-between;
+		align-items: center;		
+	}
+	&contacts-cols{
+		@media @media-size-xs{margin-bottom: 15px;}
+		@media @media-screen{width: 30%;}
+	}
+	&contacts-item{
+		margin-bottom: 5px;
+		&:last-child{margin-bottom: 0}
+	}
+	/*
+	&contacts__row{
+		@media @media-size-sm{flex-wrap: wrap; justify-content: flex-end;}
+		.cols{
+			@media @media-size-xs-p{width: 100%;margin-bottom: 5px;}
+		}
+	}
+	*/
+	&soc-cols{
+		@media @media-size-xs{margin-bottom: 15px;}
+		@media @media-screen{width: 30%;}
+	}
+	&dorohovdesign-cols{
+		font-size: @b-fs - 2px;
+		@media @media-size-xs{margin-bottom: 15px;}
+		@media @media-screen{width: 30%;}
+	}
+	&dorohovdesign__row{
+		align-items: center;
+		justify-content: flex-end;
+		margin: 0 -5px;
+		//@media @media-size-sm-p{justify-content: center; padding-top: 20px;}
+		//@media @media-size-md{flex-wrap: wrap; text-align: center;}
+		> .cols{
+			padding: 0 5px;
+			@media @media-size-md{width: 100%;}
+		}
+	}
+	&dorohovdesign__logo{
+		a{
+			border: none;
+			display: block;
+			width: 108px;
+			height: 35px;
+			margin:0 auto;
+			//@media @media-size-md{width: 88px;height: 29px;}
+			@media @media-size-lg{width: 95px;height: 31px;}
+			@media @media-size-xl1{width: 95px;height: 31px;}
+			svg{
+				fill: @footer-color;
+				transition: @transition-site;
+			}
+			&:hover{
+				svg{
+					fill: @b-color-a;
+				}
+			}
+			img{
+				@media @media-size-xs{margin: 0 auto}
+				@media @media-size-mdl{margin: 0 auto}
+			}
+		}
+	}
+}

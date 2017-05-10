@@ -1,0 +1,125 @@
+body {
+	font-family: @b-ff;	
+	font-size: @b-fs;
+	line-height: @b-lh;
+}
+h1, h2, h3, h4, h5, h6{ 
+	margin: 0 0 10px;
+}
+i, em{font-style: italic;}
+b, strong{font-weight: 700}
+h1{
+	font-weight: 700;
+}
+h2{
+	font-weight: 700;
+	.calcFontSize(24, 32, 320, 1680);
+	.calcLineHeight(32, 40, 320, 1680);
+}
+h3{
+	font-weight: 700;
+	.calcFontSize(20, 23, 320, 1680);
+	.calcLineHeight(26, 30, 320, 1680);
+}
+h4{
+	font-weight: 400;
+	.calcFontSize(16, 20, 320, 1680);
+	.calcLineHeight(24, 28, 320, 1680);	
+}
+h5{
+	font-weight: 400;
+	.calcFontSize(14, 18, 320, 1680);
+	.calcLineHeight(22, 24, 320, 1680);	
+}
+h6{
+	font-weight: 400;
+	.calcFontSize(12, 16, 320, 1680);
+	.calcLineHeight(20, 22, 320, 1680);	
+}
+ol{
+	margin-left: 30px;
+	li{padding-left: 5px;}
+}
+ul{
+	margin-left: 20px;
+	&.ul-site{
+		list-style: none;
+		margin-left: 0;
+		@media @media-device{margin-bottom: 25px}
+		@media @media-screen{margin-bottom: 3vw}
+		li{
+			position: relative;
+			padding-left: 35px;
+			margin-bottom: 10px; 
+			&:last-child{margin-bottom: 0;}
+			&:before{
+				content: '';
+				position: absolute;
+				left: 12px;
+				top: 8px;
+				background: @b-color-a;
+				width: 6px;
+				height: 6px;
+				border-radius: 50%;
+			}
+		}
+	}
+}
+._tp__{
+	&panel{
+		@media @media-screen{max-width: 960px;}
+	}
+}
+.text-block{
+	div, p, ol, ul{
+		@media @media-device{margin-bottom: 15px;}
+		@media @media-screen{margin-bottom: 20px;}
+	}
+	h2, h3{
+		@media @media-device{margin-bottom: 25px;}
+		@media @media-screen{margin-bottom: 1.4vw;}
+	}
+	*{
+		&:last-child{margin-bottom: 0}
+		& + h2{
+			@media @media-device{padding-top: 30px;}
+			@media @media-screen{padding-top: 3vw;}
+		}
+		& + h3{
+			@media @media-device{padding-top: 20px;}
+			@media @media-screen{padding-top: 1.8vw;}
+		}
+	}	
+	.table{ 
+		border: 0; 
+		thead td,
+		thead th,
+		th{
+			font-weight: 700;
+			//text-align: center;
+			.calcFontSize(16, 20, 320, 1680);
+			.calcLineHeight(22, 26, 320, 1680);
+
+		}
+		td, th{
+			border: 0;
+			border-bottom: 2px solid #dadada;
+			padding: 10px 10px;
+		}
+		tr:last-child{
+			td{
+				border: 0;				
+			}
+		}
+	}
+}
+.text-block blockquote,
+blockquote {
+	border-left: 2px solid @green;
+	padding: 0 0 0 35px;
+	font-style: italic;
+	font-size: @b-fs - 2px;
+	*{
+		margin-bottom: 10px;
+	}
+}

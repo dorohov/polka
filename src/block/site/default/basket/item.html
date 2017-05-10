@@ -1,0 +1,58 @@
+<div class="basket-item">
+	<div class="row {{prefix_basket}}row">
+		<div class="cols {{prefix_basket}}cols cols-2 preview">
+			<a href="{{link_basket}}" class="{{prefix_basket}}preview">
+				<img src="{{url-path-img}}{{preview_basket}}" alt="">
+			</a>
+		</div>
+		<div class="cols {{prefix_basket}}cols cols-5 note">
+			<h4 class="{{prefix_basket}}heading">{{header_basket}}</h4>
+			<div class="row {{prefix_basket}}options-row">
+				<div class="cols cols-6 ">
+					<div class="{{prefix_basket}}options-item">
+						<div class="row">{{option1}}</div>
+					</div>
+				</div>
+				<div class="cols cols-6 ">
+					<div class="{{prefix_basket}}options-item">
+						<div class="row">{{option2}}</div>
+					</div>
+				</div>
+				<div class="cols cols-6 ">
+					<div class="{{prefix_basket}}options-item">
+						<div class="row">{{option3}}</div>
+					</div>
+				</div>
+				<div class="cols cols-6 ">
+					<div class="{{prefix_basket}}options-item">
+						<div class="row">{{option4}}</div>
+					</div>
+				</div>
+				<div class="cols cols-6 ">
+					<div class="{{prefix_basket}}options-item">
+						<div class="row">{{option5}}</div>
+					</div>
+				</div>
+			</div>
+		</div> 	
+		<div class="cols {{prefix_basket}}cols cols-2 qty">		
+			[[azbntple 
+				tpl="/src/block/site/default/catalog/filter/qty.html" 
+				prefix_filter="catalog-filter__"
+				class_filter="qty"
+				prefix_block="_cip__"
+			]]
+		</div>
+		<div class="cols {{prefix_basket}}cols cols-2 cost">			
+			<div class="{{prefix_basket}}cost">
+				{{cost_basket}} 
+				<span>[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="ruble"]]</span>
+			</div>
+		</div>
+		<div class="cols {{prefix_basket}}cols cols-1 delete">
+			<button class="btn-site btn-delete">
+				[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="delete"]]
+			</button>
+		</div>
+	</div>
+</div>

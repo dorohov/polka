@@ -1,0 +1,93 @@
+//
+// Grid system
+// --------------------------------------------------
+
+
+// Container widths
+//
+// Set the container width, and override it for fixed navbars in media queries.
+
+.container {
+	.container-fixed();
+	width: 100%;
+	@media @media-screen{width: 95vw;}
+	@media @media-size-xxl{width: 89vw; max-width: 1650px;}
+}
+// Fluid container
+//
+// Utilizes the mixin meant for fixed width containers, but without any defined
+// width for fluid, full width layouts.
+
+.container-fluid {
+	.container-fixed();	
+	padding-left: 40px;
+	padding-right: 40px; 
+	@media @media-size-xs{
+		padding-left: 20px;
+		padding-right: 20px; 
+	}
+	@media @media-size-sml{
+		padding-left: 25px;
+		padding-right: 25px; 
+	}
+}
+
+
+// Row
+//
+// Rows contain and clear the floats of your columns.
+
+.row {
+	.make-row();
+}
+.cols {
+	.make-cols();	
+	&.cols-1{
+		@media @media-size-xs{.makeCols(12, 12);}
+		.makeCols(1, 12);
+	}	
+	&.cols-2{
+		@media @media-size-xs{.makeCols(12, 12);}
+		.makeCols(2, 12);
+	}
+	&.cols-3{
+		@media @media-size-xs{.makeCols(12, 12);}
+		.makeCols(3, 12);
+	}
+	&.cols-4{
+		@media @media-size-xs{.makeCols(12, 12);}
+		.makeCols(4, 12);
+	}
+	&.cols-5{
+		@media @media-size-xs{.makeCols(12, 12);}
+		.makeCols(5, 12);
+	}
+	&.cols-6{
+		@media @media-size-xs{.makeCols(12, 12);}
+		.makeCols(6, 12);
+	}
+	&.cols-7{
+		@media @media-size-xs{.makeCols(12, 12);}
+		.makeCols(7, 12);
+	}
+	&.cols-8{
+		@media @media-size-xs{.makeCols(12, 12);}
+		.makeCols(8, 12);
+	}
+	&.cols-9{
+		@media @media-size-xs{.makeCols(12, 12);}
+		.makeCols(9, 12);
+	}
+	&.cols-10{
+		@media @media-size-xs{.makeCols(12, 12);}
+		.makeCols(10, 12);
+	}
+	&.cols-11{
+		@media @media-size-xs{.makeCols(12, 12);}
+		.makeCols(11, 12);
+	}
+	&.cols-12{
+		@media @media-size-xs{.makeCols(12, 12);}
+		.makeCols(12, 12);
+	}
+}

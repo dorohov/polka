@@ -1,0 +1,36 @@
+<footer class="{{class}}">	
+	<div class="container {{prefix_block}}container">
+		<div class="row {{prefix_block}}row">			
+			<div class="cols {{prefix_block}}contacts-cols">
+				<div class="{{prefix_block}}contacts-item">
+					<a href="tel:{{contacts.phone_tel}}" class="{{prefix_block}}phone">{{contacts.phone}}</a>
+				</div>
+				<div class="{{prefix_block}}contacts-item">
+					<a href="tel:{{contacts.phone2_tel}}" class="{{prefix_block}}phone">{{contacts.phone2}}</a>
+				</div>
+			</div>
+			<div class="cols {{prefix_block}}soc-cols">				
+				[[azbntple 
+					tpl="/src/block/site/default/social/.html"
+					class="social-block" 
+					social-prefix="social__"
+					prefix_block="footer__social-"
+				]] 
+			</div>
+			<div class="cols {{prefix_block}}dorohovdesign-cols">
+				<div class="row {{prefix_block}}dorohovdesign__row"> 
+					<div class="cols">
+						<div>Создание сайта</div>
+					</div>
+					<div class="cols">
+						<div class="{{prefix_block}}dorohovdesign__logo">
+							<a href="http://www.dorohovdesign.ru/" target="_blank">
+								[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="dorohovdesign" class="{{prefix}}dd" ]]
+							</a>
+						</div>	
+					</div>
+				</div>				 
+			</div>	
+		</div>
+	</div>
+</footer>

@@ -1,0 +1,98 @@
+@basket-color-line: #cdcdcd;
+.basket-item{
+	border-top: 1px solid @basket-color-line;
+	padding: 30px 0;
+	&:last-child{
+		border-bottom: 1px solid @basket-color-line;
+		@media @media-device{margin-bottom: 30px;}
+		@media @media-screen{margin-bottom: 2.5vw;}
+	}
+}
+.basket-item__{
+	&row{
+		margin-top: -30px;
+		@media @media-size-xs{justify-content: space-between;}
+		@media @media-size-xxs-p{justify-content: center;}
+		@media @media-size-sm{
+			flex-wrap: wrap;
+			justify-content: flex-end;
+		}
+		align-items: center;
+	}
+	&cols{
+		padding-top: 30px;
+		&.preview{
+			@media @media-size-sm{width: 30%;}
+		}
+		&.note{
+			@media @media-size-sm{width: 70%;}
+		}
+		&.qty{
+			@media @media-size-xs{.makeCols(4, 12);}
+			@media @media-size-xxs-p{width: auto;}
+			@media @media-size-sm{width: auto;}
+			@media @media-notsmart{text-align: right;}
+			.catalog-filter{margin: 0; padding: 0}
+		}
+		&.cost{
+			@media @media-size-xs{.makeCols(4, 12);}
+			@media @media-size-xxs-p{width: auto;}
+			@media @media-size-sm{width: auto;}
+		}
+		&.delete{
+			@media @media-size-xs{.makeCols(4, 12); text-align: right}
+			@media @media-size-xxs-p{width: auto;}
+			@media @media-size-sm{width: auto;}
+			@media @media-notsmart{text-align: center;}
+			
+		}
+	}
+	&item{}
+	&preview{
+		display: block;	
+		@media @media-size-xs{
+			img{margin: 0 auto;}
+		}	
+	}
+	&heading{
+		font-weight: 700;
+		font-family: @bague;
+		margin-bottom: 17px;
+		.calcFontSize(22, 26, 320, 1680);
+		.calcLineHeight(26, 30, 320, 1680);
+	}
+	&options-row{
+		flex-wrap: wrap;
+		@media @media-screen{max-width: 460px;}
+	}
+	&options-item{
+		border-bottom: 1px solid @basket-color-line; 
+		font-size: @b-fs - 2px;
+		margin-bottom: 7px;
+		.row{
+			justify-content: space-between;
+			margin: 0 -5px;
+			*{padding: 0 5px;}
+		}
+		span{
+			font-weight: 700;
+			//margin-right: 20px;
+		}
+	}
+	&cost{
+		text-align: center;
+		font-family: @bague;
+		display: flex;
+		justify-content: center;
+		//.calcFontSize(18, 26, 320, 1680);
+		//.calcLineHeight(22, 30, 320, 1680);		
+		font-size: @b-fs + 10px;
+		line-height: @b-lh + 8px;
+		span{
+			width: 40px;
+			height: 30px;
+			display: inline-block;
+		}
+	}
+	&{}
+}

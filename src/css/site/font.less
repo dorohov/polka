@@ -1,0 +1,72 @@
+.include-custom-font(
+	@family: @circe, 
+	@src-name: @circe, 
+	@weight: normal, 
+	@style: normal
+	){
+	@font-face{			
+		font-family: "@{family}";			
+		src:	url('@{url-path-fonts}/@{src-name}.woff2') format('woff2'),
+				url('@{url-path-fonts}/@{src-name}.woff') format('woff');
+		font-weight: @weight;
+		font-style: @style;		
+	}
+}
+.include-custom-icon(@family: @icon, @weight: normal, @style: normal){
+	@font-face{			
+		font-family: "@{family}";			
+		src: url('@{url-path-fonts}/@{family}.woff') format('woff');
+		font-weight: @weight;
+		font-style: @style;		
+	}
+}
+.include-custom-font(
+	@family: @open,
+	@src-name: @open-light,
+	@weight: 300, 
+	@style: normal
+	);
+.include-custom-font(
+	@family: @open,
+	@src-name: @open,
+	@weight: 400, 
+	@style: normal
+	);
+.include-custom-font(
+	@family: @open,
+	@src-name: @open-ital,
+	@weight: 400, 
+	@style: italic
+	);
+.include-custom-font(
+	@family: @open,
+	@src-name: @open-sbold,
+	@weight: 500, 
+	@style: italic
+	);
+.include-custom-font(
+	@family: @open,
+	@src-name: @open-bold,
+	@weight: 600, 
+	@style: italic
+	);
+//
+.include-custom-font(
+	@family: @rex,
+	@src-name: @rex-bold,
+	@weight: 700, 
+	@style: normal
+	);
+//
+.include-custom-font(
+	@family: @bague,
+	@src-name: @bague-bold,
+	@weight: 700, 
+	@style: normal
+	);
+.include-custom-font(
+	@family: @bague,
+	@src-name: @bague-ubold,
+	@weight: 800, 
+	@style: normal
+	);

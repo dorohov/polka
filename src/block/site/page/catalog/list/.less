@@ -1,0 +1,24 @@
+.catalog-page{}
+._cp__{
+	&row{
+		flex-wrap: wrap;
+		margin-top: -30px;
+		@media @media-device {margin-bottom: 30px;}
+		@media @media-screen {margin-bottom: 2.2vw;}
+	}
+	&cols{
+		padding-top: 30px;
+		&.cols-3{
+			@media @media-size-xs{.makeCols(6, 12);}
+			@media @media-size-xxs{.makeCols(12, 12);}
+			@media @media-size-sm{.makeCols(6, 12);}
+			@media @media-screen{.makeCols(3, 12);}
+			@media @media-size-md{.makeCols(6, 12);}
+		}
+		&.cols-6{
+			@media @media-size-xs{.makeCols(6, 12);}
+			@media @media-size-xxs{.makeCols(12, 12);}
+			@media @media-notsmart{.makeCols(6, 12);}
+		}
+	}
+}

@@ -1,0 +1,35 @@
+.page-header-block{
+	@media @media-device{margin-bottom: 40px}
+	@media @media-screen{margin-bottom: 3.3vw;}
+	&.catalog-item{
+		@media @media-device{margin-bottom: 20px}
+		@media @media-screen{margin-bottom: 1.8vw;}
+		.page-header__heading{
+			.calcFontSize(22, 42, 320, 1680);
+			.calcLineHeight(30, 42, 320, 1680);
+		}
+	}
+}
+.page-header__{
+	&row{
+		margin-top: -15px;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&cols{
+		padding-top: 15px;
+	}
+	&code{
+		font-weight: 700;
+		.calcFontSize(18, 24, 320, 1680);
+		.calcLineHeight(24, 30, 320, 1680);
+		margin-bottom: 10px;
+	}
+	&heading{
+		font-family: @bague;
+		.calcFontSize(24, 46, 320, 1680);
+		.calcLineHeight(32, 46, 320, 1680);
+		margin-bottom: 0;
+	}
+}
