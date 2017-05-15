@@ -20,27 +20,3 @@ wp_head();
 <?
 $this->tpl('_/navbar', array());
 ?>
-
-<!--
-<div>
-<?
-$posts = $this->getItems(array(
-	'post_type' => 'page',
-	'posts_per_page' => -1,
-	'orderby' => 'menu_order title date',
-	'order'   => 'ASC',
-	/*
-	'post_parent' => 0,
-	'tax_query' => array(array(
-		'taxonomy' => 'project_taxonomies',
-		'field' => 'slug',
-		'terms' => array('residential'),
-	)),
-	*/
-));
-foreach($posts as $p) {
-	echo "<a href=\"" . l($p->ID) . "\" >{$p->post_title}</a>";
-}
-?>
-</div>
--->

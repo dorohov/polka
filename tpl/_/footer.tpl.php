@@ -59,6 +59,7 @@
 		<!-- <script src="<?=$this->path('js');?>/jquery.min.js" ></script> -->
 		<script src="<?=$this->path('js');?>/jquery-3.2.1.min.js" ></script>
 		<script src="<?=$this->path('js');?>/document-ready.js" ></script>
+		<script src="<?=$this->path('js');?>/document-ready-azbn.js" ></script>
 
 		<script src="<?=$this->path('js');?>/bootstrap.min.js" ></script>
 		<script src="<?=$this->path('js');?>/device.min.js" ></script>
