@@ -1,10 +1,13 @@
-<meta charset="utf-8" >
-<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
+<meta charset="utf-8">
+<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
-<title><? wp_title(); ?></title>
-
+<!--
+<title><? wp_title();?></title>
+<meta name="description" content="{{description}}"/>
+-->
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta HTTP-EQUIV="Cache-Control" content="no-cache" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="<?=$this->path('favicon');?>/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="<?=$this->path('favicon');?>/favicon-32x32.png">
