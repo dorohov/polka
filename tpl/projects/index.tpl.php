@@ -1,7 +1,14 @@
 <?
+
+$range = 10;
+
+$paged = get_query_var('paged') ? get_query_var('paged') : 1;
+$paged = $paged - 1;
+
 $posts = $this->getItems(array(
 	'post_type' => 'photo',
 	'posts_per_page' => -1,
+	//'page' => $paged,
 	'orderby' => 'menu_order title date',
 	'order'   => 'ASC',
 	//'post_parent' => 0,
@@ -11,6 +18,9 @@ $posts = $this->getItems(array(
 		'terms' => array('projects'),
 	)),
 ));
+
+$_posts = array_slice($posts, ($paged * $range), $range, true);
+
 /*
 foreach($posts as $p) {
 	echo "<a href=\"" . l($p->ID) . "\" >{$p->post_title}</a>";
@@ -33,11 +43,11 @@ foreach($posts as $p) {
 		<div class="row _cp__row">
 			
 			<?
-			if(count($posts)) {
+			if(count($_posts)) {
 				
 				$i = 0;
 				
-				foreach($posts as $p) {
+				foreach($_posts as $p) {
 					
 					$i++;
 					
@@ -69,6 +79,7 @@ foreach($posts as $p) {
 		
 		<?
 		//pagination($posts);
+		__theme_pagination($posts, $paged, $range);
 		?>
 		
 	</div>

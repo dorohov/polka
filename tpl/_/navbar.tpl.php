@@ -88,7 +88,7 @@
  			<div class="cols <?=$prefix_navbar;?>col-basket">
  				<a href="<?=l(12);?>" class="btn-site <?=$prefix_navbar;?>basket"> 
 					<span class="_icon"><svg class="icon-svg icon-basket" role="img"><use xlink:href="<?=$this->path('img');?>/svg/sprite.svg#basket"></use></svg></span>
-					<span class="_count">4</span>			
+					<span class="_count azbn-cart-items-qty ">0</span>
  				</a>
  			</div>
  		</div>

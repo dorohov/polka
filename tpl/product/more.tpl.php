@@ -39,7 +39,7 @@ if(count($posts)) {
 		
 		<div class="cols _cip__cols cols-2">
 			<div class="catalog-element more">	
-				<a href="<?=$link;?>" class="catalog-element__preview" style="background-image: url(<?=$this->path('img');?>/temp/catalog-item1.jpg);">
+				<a href="<?=$link;?>" class="catalog-element__preview" style="background-image: url(<?=$this->Imgs->postImg($p->ID, '795x530');?>);">
 				</a>
 				<div class="catalog-element__note">
 					<h4 class="catalog-element__heading"><?=$p->post_title;?></h4>
