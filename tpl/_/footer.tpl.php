@@ -49,6 +49,42 @@
 				</div>
 			</div>
 		</footer>
+
+<div class="modal fade modal-base" id="modal-message-ask" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog modal-base__dialog">
+		<div class="modal-body modal-base__body" >
+			<button type="button" class="btn-site btn-close modal-close" data-dismiss="modal" aria-hidden="true">
+				<svg class="icon-svg icon-cancel" role="img">
+					<use xlink:href="<?=$this->path('img');?>/svg/sprite.svg#cancel"></use>
+				</svg>
+			</button>
+			<div class="modal-content modal-base__content">
+				<h3 class="modal-title modal-base__title">Ваша заявка успешно отправлена!</h3>
+				<div class="modal-note modal-base__note">		
+					Наши специалисты свяжутся с Вами в ближайшее время.
+				</div>
+			</div> 
+		</div>
+	</div>
+</div>
+
+<div class="modal fade modal-base" id="modal-message-order" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog modal-base__dialog">
+		<div class="modal-body modal-base__body" >
+			<button type="button" class="btn-site btn-close modal-close" data-dismiss="modal" aria-hidden="true">
+				<svg class="icon-svg icon-cancel" role="img">
+					<use xlink:href="<?=$this->path('img');?>/svg/sprite.svg#cancel"></use>
+				</svg>
+			</button>
+			<div class="modal-content modal-base__content">
+				<h3 class="modal-title modal-base__title">Ваша заказ успешно отправлен!</h3>
+				<div class="modal-note modal-base__note">		
+					Наши специалисты свяжутся с Вами в ближайшее время.
+				</div>
+			</div> 
+		</div>
+	</div>
+</div>
 		
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!--[if lt IE 9]>

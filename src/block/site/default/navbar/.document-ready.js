@@ -3,7 +3,7 @@ $('.navbar__nav a[href="'+url+'"]').parent().addClass('is--active');
 
 $(function () {
 	$('body, .navbar-site .navbar__form button[type="reset"]').on('click keyup', function(event) {
-		console.log(event.currentTarget);
+		//console.log(event.currentTarget);
 		if (event.which == 27 && $('.navbar-site .navbar__form').hasClass('is--active') ||
 			$(event.currentTarget).attr('type') == 'reset') {
 			closeSearch();

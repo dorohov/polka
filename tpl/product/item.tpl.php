@@ -1,12 +1,7 @@
 <?
 
 
-$materials = array(
-	'wood' => 'Дерево',
-	'metal' => 'Металл',
-	'glass' => 'Стекло',
-);
-//var_dump($this->getMeta(14, 'colors'));
+$materials = __theme_get_materials();
 
 $colors = $this->getItems(array(
 	'post_type' => 'attachment',
@@ -52,7 +47,7 @@ if($costs_str != '') {
 				<a href="<?=$this->Imgs->postImg($this->post['id'], 'full');?>" class="_cip__preview" data-fancybox="gallery-preview" style="background-image: url(<?=$this->Imgs->postImg($this->post['id'], '991x544');?>)">
 				</a>
 			</div>
-			<div class="cols _cip__cols cols-5">				
+			<div class="cols _cip__cols cols-5 azbn-product-block ">
 				<div class="page-header-block catalog-item">
 					<div class="page-header__code">Арт. <?=$art;?></div>
 					<h1 class="page-header__heading">Полка прямая</h1>
@@ -64,6 +59,7 @@ if($costs_str != '') {
 					
 					<?
 					if(count($costs)) {
+						if(1) {
 					?>
 					
 					<div class="cols _cip__filter-cols cols-12">
@@ -92,11 +88,6 @@ if($costs_str != '') {
 							</div>
 						</div>
 					</div>
-					
-					<?
-					}
-					?>
-					
 					
 					<?
 					if(count($colors)) {
@@ -144,11 +135,6 @@ if($costs_str != '') {
 					
 					<?
 					}
-					?>
-					
-					
-					<?
-					if(count($costs)) {
 					?>
 					
 					<div class="cols _cip__filter-cols">
@@ -225,6 +211,7 @@ if($costs_str != '') {
 					</div>
 					
 					<?
+						}
 					}
 					?>
 					
@@ -232,10 +219,11 @@ if($costs_str != '') {
 						
 						<input type="hidden" name="product_order[id]" value="<?=$this->post['id'];?>" />
 						<input type="hidden" name="product_order[art]" value="<?=$art;?>" />
-						<input type="hidden" name="product_order[material]" value="" />
-						<input type="hidden" name="product_order[color]" value="" />
-						<input type="hidden" name="product_order[x]" value="" />
-						<input type="hidden" name="product_order[y]" value="" />
+						<input type="hidden" name="product_order[cost]" value="<?=intval($cost);?>" />
+						<input type="hidden" name="product_order[material]" value="default" />
+						<input type="hidden" name="product_order[color]" value="default" />
+						<input type="hidden" name="product_order[x]" value="default" />
+						<input type="hidden" name="product_order[y]" value="default" />
 						
 						<div class="cols _cip__filter-cols cols-12">
 							<div class="catalog-filter qty">

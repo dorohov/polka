@@ -252,65 +252,18 @@ function __theme_pagination($posts = array(), $page = 0, $range = 10)
 
 function pagination($wp_query, $pages = '', $range = 10)
 {
-	$showitems = ($range * 2)+1;
-	global $paged;
-	if(empty($paged)) $paged = 1;
-	if($pages == '') {
-		//global $wp_query;
-		$pages = $wp_query->max_num_pages;
-		if(!$pages) {
-			$pages = 1;
-		}
-	}
-	if(1 != $pages) {
-		?>
-		<div class="pagination-block _cp__pagination-block">
-			<ul class="pagination__list">
-				<?
-				for($i = 0; $i < $pages; $i++) {
-					$_i = $i + 1;
-				?>
-				<li class="pagination__list-item <?if($_i == $paged){?> is--active <?}?>">
-					<a href="#" class="pagination__list-link"><?=$_i;?></a>
-				</li>
-				<?
-				}
-				?>
-			</ul>
-		</div>
-		<?
-		/*
-		<div class="pagination-block _cp__pagination-block">
-			<ul class="pagination__list">
-				<li class="pagination__list-item is--active">
-					<a href="#" class="pagination__list-link">1</a>
-				</li>
-				<li class="pagination__list-item">
-					<a href="#" class="pagination__list-link">2</a>
-				</li>
-				<li class="pagination__list-item">
-					<a href="#" class="pagination__list-link">3</a>
-				</li>
-				<li class="pagination__list-item">
-					<a href="#" class="pagination__list-link">4</a>
-				</li>
-			</ul>
-		</div>
-		
-		echo "<div class=\"pagination\"><span>Страница ".$paged." из ".$pages."</span>";
-		if($paged > 2 && $paged > $range+1 && $showitems < $pages) echo "<a href='".get_pagenum_link(1)."'>&laquo; First</a>";
-		if($paged > 1 && $showitems < $pages) echo "<a href='".get_pagenum_link($paged - 1)."'>&lsaquo; Previous</a>";
-		for ($i=1; $i <= $pages; $i++) {
-			if (1 != $pages &&( !($i >= $paged+$range+1 || $i <= $paged-$range-1) || $pages <= $showitems )) {
-				echo ($paged == $i)? "<span class=\"current\">".$i."</span>":"<a href='".get_pagenum_link($i)."' class=\"inactive\">".$i."</a>";
-			}
-		}
-		if ($paged < $pages && $showitems < $pages) echo "<a href=\"".get_pagenum_link($paged + 1)."\">Next &rsaquo;</a>";
-		if ($paged < $pages-1 &&  $paged+$range-1 < $pages && $showitems < $pages) echo "<a href='".get_pagenum_link($pages)."'>Last &raquo;</a>";
-		echo "</div>\n";
-		*/
-	}
+	
 }
+
+function __theme_get_materials()
+{
+	return array(
+		'wood' => 'Дерево',
+		'metal' => 'Металл',
+		'glass' => 'Стекло',
+	);
+}
+
 
 
 add_action(
