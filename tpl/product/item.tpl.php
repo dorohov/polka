@@ -3,6 +3,7 @@
 
 $materials = __theme_get_materials();
 
+/*
 $colors = $this->getItems(array(
 	'post_type' => 'attachment',
 	'post_mime_type' => 'image',
@@ -12,6 +13,7 @@ $colors = $this->getItems(array(
 	'order'   => 'ASC',
 	'post__in' => $this->getMeta(14, 'colors'),
 ));
+*/
 
 
 
@@ -27,6 +29,19 @@ if($costs_str != '') {
 	$costs = json_decode($costs_str, true);
 	
 }
+
+$colors = get_field('product-colors', $this->post['id']);
+$colors = $this->getItems(array(
+	'post_type' => 'photo',
+	'posts_per_page' => -1,
+	'orderby' => 'menu_order title date',
+	'order'   => 'ASC',
+	'tax_query' => array(array(
+		'taxonomy' => 'photo_taxonomies',
+		'field' => 'slug',
+		'terms' => array($colors->slug),
+	)),
+));
 
 
 ?>
@@ -44,7 +59,7 @@ if($costs_str != '') {
 		</div>
 		<div class="row _cip__row">
 			<div class="cols _cip__cols cols-7">
-				<a href="<?=$this->Imgs->postImg($this->post['id'], 'full');?>" class="_cip__preview" data-fancybox="gallery-preview" style="background-image: url(<?=$this->Imgs->postImg($this->post['id'], '991x544');?>)">
+				<a href="<?=$this->Imgs->postImg($this->post['id'], 'full');?>" class="_cip__preview azbn-product-image-a " data-fancybox="gallery-preview" style="background-image: url(<?=$this->Imgs->postImg($this->post['id'], '991x544');?>)">
 				</a>
 			</div>
 			<div class="cols _cip__cols cols-5 azbn-product-block ">
@@ -109,14 +124,14 @@ if($costs_str != '') {
 										</a>
 										<div class="dropdown-menu catalog-filter__dropdown-menu  img">
 											<div class="mCustomScrollbar scroller" data-mcs-theme="black-light">
-												<div class="row catalog-filter__dropdown-row">
+												<div class="row catalog-filter__dropdown-row azbn-flt-btn" data-flt-key="color" >
 													
 													<?
 													foreach($colors as $p) {
 													?>
-													<div class="cols catalog-filter__dropdown-cols azbn-flt-btn" data-flt-key="color" data-color="<?=$p->post_title;?>" >
+													<div class="cols catalog-filter__dropdown-cols azbn-flt-by-material" data-flt-material="<?=$this->getMeta($p->ID, 'material');?>" data-flt-key="color" data-color="<?=$p->post_title;?>" data-color-image-sm="<?=$this->Imgs->postImg($p->ID, '991x544');?>" data-color-image-full="<?=$this->Imgs->postImg($p->ID, 'full');?>" >
 														<a href="#" class="catalog-filter__dropdown-color">
-															<div class="catalog-filter__dropdown-color-preview"><img src="<?=$this->Imgs->rawImg($p->ID, '95x65');?>" alt=""></div>
+															<div class="catalog-filter__dropdown-color-preview"><img src="<?=$this->Imgs->postImg($p->ID, '95x65');?>" alt=""></div>
 															<div><?=$p->post_title;?></div>
 														</a>
 													</div>

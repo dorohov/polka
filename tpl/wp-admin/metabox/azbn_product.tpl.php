@@ -35,10 +35,19 @@ foreach ($field as $f) {
 				
 				<div class="item-col" >
 					<label>Mатериал</label>
+					<?
+					$__material = __theme_get_materials();
+					?>
 					<select class="row__material" >
-						<option value="wood" >Дерево</option>
-						<option value="metal" >Металл</option>
-						<option value="glass" >Стекло</option>
+						<?
+						if(count($__material)) {
+							foreach($__material as $__k => $__v) {
+						?>
+						<option value="<?=$__k;?>" ><?=$__v;?></option>
+						<?
+							}
+						}
+						?>
 					</select>
 				</div>
 				
