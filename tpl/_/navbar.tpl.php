@@ -67,10 +67,10 @@
 								<a href="<?=l(4);?>" class="<?=$prefix_navbar;?>nav-link" ><?=t(4);?></a>
 							</li>
 						</ul>
-						<form class="<?=$prefix_navbar;?>form" role="search" action="#">
+						<form class="<?=$prefix_navbar;?>form" role="search" action="/">
 							<div class="<?=$prefix_navbar;?>form-group">
 								<div class="<?=$prefix_navbar;?>form-item">
-									<input type="text" class="<?=$prefix_navbar;?>form-control form-control" name="s" placeholder="Поиск по сайту">
+									<input type="text" class="<?=$prefix_navbar;?>form-control form-control" name="s" placeholder="Поиск по сайту" value="<?=get_search_query();?>" />
 								</div>
 								<span class="<?=$prefix_navbar;?>form-btn-group">
 									<button type="submit" class="btn-site <?=$prefix_navbar;?>form-btn _search">

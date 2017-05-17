@@ -50,7 +50,7 @@ if($costs_str != '') {
 			<div class="cols _cip__cols cols-5 azbn-product-block ">
 				<div class="page-header-block catalog-item">
 					<div class="page-header__code">Арт. <?=$art;?></div>
-					<h1 class="page-header__heading">Полка прямая</h1>
+					<h1 class="page-header__heading"><?=t($this->post['id']);?></h1>
 				</div>
 				<div class="text-block _cip__text">
 					<?=c($this->post['id']);?>

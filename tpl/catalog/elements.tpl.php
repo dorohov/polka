@@ -45,7 +45,7 @@ foreach($posts as $p) {
 					<a href="<?=l(18);?>" class="btn-site btn-heading to--bg btn-arrow">
 						Готовые решения
 						<span><svg class="icon-svg icon-arrow-next" role="img">
-							<use xlink:href="/img/svg/sprite.svg#arrow-next"></use>
+							<use xlink:href="<?=$this->path('img');?>/svg/sprite.svg#arrow-next"></use>
 						</svg></span>
 					</a>
 				</div>
