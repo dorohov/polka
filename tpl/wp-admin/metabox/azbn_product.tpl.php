@@ -172,7 +172,7 @@ foreach ($field as $f) {
 	<?
 	if($value == '') {
 	?>
-	cloneIdealItem();
+	//cloneIdealItem();
 	<?
 	} else {
 		if(count($value_o)) {
@@ -191,7 +191,7 @@ foreach ($field as $f) {
 			}
 		} else {
 		?>
-		cloneIdealItem();
+		//cloneIdealItem();
 		<?
 		}
 	}

@@ -44,6 +44,13 @@ $colors = $this->getItems(array(
 ));
 
 
+$cat = get_the_terms($this->post['id'], 'product_taxonomies');
+
+if(count($cat)) {
+	$cat = $cat[0];
+}
+
+
 ?>
 
 <div class="content-block catalog-item-page" role="main">
@@ -52,7 +59,7 @@ $colors = $this->getItems(array(
 			<ul class="breadcrumb__list">
 				<li class="breadcrumb__list-item"><a href="<?=l(1);?>" class="breadcrumb__list-link">Главная</a></li>
 				<li class="breadcrumb__list-item">
-					<a href="/" class="breadcrumb__list-link">Каталог элементов</a>
+					<a href="<?=get_term_link($cat);?>" class="breadcrumb__list-link"><?=$cat->name;?></a>
 				</li>
 				<li class="breadcrumb__list-item is--active"><?=t($this->post['id']);?></li> 
 			</ul>
@@ -271,7 +278,7 @@ $colors = $this->getItems(array(
 						<div class="_cip__cost-status">В наличии</div>
 						
 						<?
-						if($cost != '') {
+						if($cost != '' || count($costs)) {
 						?>
 						<div class="_cip__cost-price">
 							<div class="azbn-flt-btn-cost-result" ><?=number_format($cost, 0, ',', ' ');?></div>

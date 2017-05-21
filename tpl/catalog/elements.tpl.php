@@ -18,7 +18,8 @@ $posts = $this->getItems(array(
 	)),
 ));
 
-$_posts = array_slice($posts, ($paged * $range), $range, true);
+$_posts = $posts;
+//$_posts = array_slice($posts, ($paged * $range), $range, true);
 
 /*
 foreach($posts as $p) {
@@ -113,7 +114,7 @@ foreach($posts as $p) {
 		
 		<?
 		//pagination($posts);
-		__theme_pagination($posts, $paged, $range);
+		//__theme_pagination($posts, $paged, $range);
 		?>
 		
 	</div>

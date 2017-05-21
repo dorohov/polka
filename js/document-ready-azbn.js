@@ -145,6 +145,7 @@
 			}
 			
 			var sum = 0;
+			var qty = 0;
 			
 			for(var _id in cart) {
 				
@@ -161,6 +162,7 @@
 									for(var _color in by_size) {
 										
 										//res = res + by_size[_color];
+										qty = qty + by_size[_color].qty;
 										sum = sum + (by_size[_color].qty * by_size[_color].cost);
 										
 										cb({
@@ -186,7 +188,7 @@
 				
 			}
 			
-			cb2(sum);
+			cb2(sum, qty);
 			
 		},
 		
@@ -233,7 +235,7 @@
 	
 	var CartPageItem = function(product) {
 		
-		console.log(product);
+		//console.log(product);
 		
 		var item = ideal_item.clone(true);
 		
@@ -295,9 +297,9 @@
 				
 				CartPageItem($.extend(item, CatalogData[item.id])).appendTo($('.basket-page .basket-list'));
 				
-			}, function(sum){
+			}, function(sum, qty){
 				
-				if(sum > 0) {
+				if((sum > 0) || (qty > 0)) {
 					
 					$('.azbn-cart-deliver-row .azbn-cart-sum').html(sum);
 					
@@ -311,6 +313,8 @@
 				}
 				
 			});
+			
+			$('.basket-page.hidden').removeClass('hidden');
 			
 		}
 		
@@ -658,6 +662,32 @@
 			
 			$(document.body).trigger('azbn.cart.recalc2');
 			$(document.body).trigger('azbn.cart.getallitems');
+			
+			$('.basket-page .basket-list').empty();
+			
+			Cart.iterAll(function(item){
+				
+				//console.log(CatalogData[item.id] ? item : 'Not found: ' + item.id);
+				
+				CartPageItem($.extend(item, CatalogData[item.id])).appendTo($('.basket-page .basket-list'));
+				
+			}, function(sum, qty){
+				
+				if((sum > 0) || (qty > 0)) {
+					
+					$('.azbn-cart-deliver-row .azbn-cart-sum').html(sum);
+					
+					$('.azbn-formsave-order input[name="o[order]"]').val(encodeURIComponent(LS.get(Cart.lscart_uid())));
+					
+				} else {
+					
+					$('.azbn-cart-title').html('Корзина пуста');
+					$('.azbn-cart-deliver-row').empty().remove();
+					
+				}
+				
+			});
+			
 			
 			$('.azbn-cart-sum').html(Cart.getAll().sum);
 			

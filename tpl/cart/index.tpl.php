@@ -36,17 +36,17 @@ var CatalogData = {
 <?
 
 ?>
-<div class="content-block basket-page" role="main">
+<div class="content-block basket-page hidden" role="main">
 	<div class="container content-container">
 		<div class="breadcrumb-block _bp__breadcrumb-block">
-	<ul class="breadcrumb__list">
-		<li class="breadcrumb__list-item"><a href="/" class="breadcrumb__list-link">Главная</a></li>
-		<li class="breadcrumb__list-item is--active">Корзина</li>
-	</ul>
-</div>
+			<ul class="breadcrumb__list">
+				<li class="breadcrumb__list-item"><a href="/" class="breadcrumb__list-link">Главная</a></li>
+				<li class="breadcrumb__list-item is--active">Корзина</li>
+			</ul>
+		</div>
 		<div class="page-header-block">
-	<h1 class="page-header__heading azbn-cart-title">Корзина</h1>		
-</div>
+			<h1 class="page-header__heading azbn-cart-title">Корзина</h1>		
+		</div>
 		<div class="basket-list">
 			
 			
