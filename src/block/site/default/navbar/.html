@@ -1,0 +1,85 @@
+ <nav class="navbar {{class}}">
+ 	<div class="container {{navbar_prefix}}container">
+ 		<div class="row {{navbar_prefix}}row">
+ 			<div class="cols {{navbar_prefix}}col-header"> 				
+				<div class="{{navbar_prefix}}header">
+					<div class="row {{navbar_prefix}}row-header ">
+						<div class="cols {{navbar_prefix}}col-hamburger">
+							<div class="{{navbar_prefix}}hamburger">
+								<button class="{{navbar_prefix}}hamburger-btn hamburger hamburger--arrow" data-toggle="collapse" data-target="#bs-navbar-collapse" aria-expanded="false" data-toggle-nav=".navbar-site" data-body="html" data-collapse-nav=".navbar__collapse">
+									<span class="hamburger-box">
+										<span class="hamburger-inner"></span>
+									</span>
+								</button>
+							</div>
+						</div>
+						<div class="cols {{navbar_prefix}}col-brand">
+							<a class="{{navbar_prefix}}brand" href="/">
+								<span class="_logo">[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="logotip" ]]</span>
+								<span class="_name">{{contacts.name}}</span>
+								<span class="_phone">{{contacts.phone}}</span>
+							</a>
+						</div>
+					</div>
+				</div>
+ 			</div>
+ 			<div class="cols {{navbar_prefix}}col-collapse">
+				<div class="{{navbar_prefix}}collapse" >
+					<div class="{{navbar_prefix}}collapse-inner">	
+						<ul class="{{navbar_prefix}}nav">		 	
+							<li class="{{navbar_prefix}}nav-item">
+								<a href="/" class="{{navbar_prefix}}nav-link">Главная</a> 
+							</li>		 	
+							<li class="{{navbar_prefix}}nav-item">
+								<a href="/about.html" class="{{navbar_prefix}}nav-link">О компании</a> 
+							</li>
+							<li class="{{navbar_prefix}}nav-item dropdown">
+								<a href="#" class="{{navbar_prefix}}nav-link dropdown-toggle" data-toggle="dropdown">
+									<span class="_icon">[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="arrow-down" ]]</span>
+									Каталог товаров</a>
+								<ul class="{{navbar_prefix}}dropdown dropdown-menu">
+									<li class="{{navbar_prefix}}dropdown-item">
+										<a href="/catalog.html" class="{{navbar_prefix}}dropdown-link">Каталог элементов</a>
+									</li>
+									<li class="{{navbar_prefix}}dropdown-item">
+										<a href="/catalog-ready.html" class="{{navbar_prefix}}dropdown-link">Готовые решения</a>
+									</li>
+								</ul>
+									 	
+							<li class="{{navbar_prefix}}nav-item">
+								<a href="/projects.html" class="{{navbar_prefix}}nav-link">Реализованные проекты</a> 
+							</li>	 	
+							<li class="{{navbar_prefix}}nav-item">
+								<a href="/delivery.html" class="{{navbar_prefix}}nav-link">Доставка и оплата</a> 
+							</li>	 	
+							<li class="{{navbar_prefix}}nav-item">
+								<a href="/contacts.html" class="{{navbar_prefix}}nav-link">Контакты</a> 
+							</li>
+						</ul>
+						<form class="{{navbar_prefix}}form" role="search" action="/search.html">
+							<div class="{{navbar_prefix}}form-group">
+								<div class="{{navbar_prefix}}form-item">
+									<input type="text" class="{{navbar_prefix}}form-control form-control" placeholder="Поиск по сайту">
+								</div>
+								<span class="{{navbar_prefix}}form-btn-group">
+									<button type="submit" class="btn-site {{navbar_prefix}}form-btn _search">
+										<span>[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="search" ]]</span>
+									</button>
+									<button type="reset" class="btn-site {{navbar_prefix}}form-btn _reset">
+										<span>[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="cancel" ]]</span>
+									</button>
+								</span>
+							</div>
+						</form>
+					</div>
+				</div>
+ 			</div>
+ 			<div class="cols {{navbar_prefix}}col-basket">
+ 				<a href="/basket.html" class="btn-site {{navbar_prefix}}basket"> 
+					<span class="_icon">[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="basket" ]]</span>
+					<span class="_count">4</span>			
+ 				</a>
+ 			</div>
+ 		</div>
+ 	</div>
+</nav>

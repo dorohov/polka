@@ -1,0 +1,153 @@
+.btn-site{
+	display: inline-block;
+	border: none;
+	outline: none;
+	background: none;
+	text-decoration: none;
+	transition: @transition-site;
+	border-bottom: 0;
+
+	//custom	
+	z-index: 1;
+	transition: @trs-btn;
+	position: relative;	
+	&::before {
+		display: block;
+		position: absolute;
+		top: 0px;
+		height: 100%;
+		z-index: -1;
+		content: '';
+		transition: @trs-btn;
+	}
+	&.to--bg{
+		&::before {
+			right: 0px;
+			width: 0px;
+		}
+		&:hover{			
+			&::before {
+				left: 0%;
+				right: auto;
+				width: 100%;
+			}
+		}
+	}
+	&.to--nobg{		
+		&::before {
+			left: 0px;
+			width: 100%;
+		}
+		&:hover{			
+			&::before {
+				right: 0%;
+				left: auto;
+				width: 0%;
+			}
+		}
+	}
+	&:focus,
+	&:hover{
+		text-decoration: none;
+	}
+	&:focus{
+		color: inherit;
+	}
+}
+.btn-arrow{
+	font-size: @b-fs - 3px;
+	padding: 7px 35px 7px 10px;
+	span{
+		display: block;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		right: 15px;
+		width: 10px;
+		height: 10px;
+		svg{display: block}
+	}
+}
+.btn-catalog-card{
+	&, &:focus{color: @black-light;}
+	border: 1px solid @black-light;
+	&::before {
+		background: @black-light;
+	}
+	&:hover {
+		color: @white;
+		background-color: transparent;
+	}
+}
+.btn-basket{
+	&, &:focus{color: @white;}
+	border: 1px solid @green;
+	color: @white;
+	padding: 7px 35px 7px 25px;
+	font-size: @b-fs - 4px;
+	&::before {
+		background: @green;
+	}
+	&:hover {
+		color: @green;
+		background-color: transparent;
+	}
+}
+.btn-heading{
+	&, &:focus{color: @black-light;}
+	border: 1px solid @green;
+	padding: 15px 35px 15px 20px;
+	&::before {
+		background: @green;
+	}
+	&:hover {
+		color: @white;
+		background-color: transparent;
+	}
+}
+.btn-deliver{	
+	border: 1px solid @green;
+	padding: 7px 40px 7px 25px;
+	&, &:focus{color: @white;}
+	&::before {
+		background: @green;
+	}
+	&:hover {
+		color: @black-light;
+		background-color: transparent;
+	}
+}
+.btn-submit {
+	.calcFontSize(18, 20, 320, 1680);
+	.calcLineHeight(18, 20, 320, 1680);
+	padding: 10px 20px;
+	&.white{					
+		border: 1px solid @white;
+		&, &:focus{color: @b-color;}
+		&::before {
+			background: @white; 
+		}
+		&:hover {
+			color: @white;
+			background-color: transparent;
+		}
+	}
+	&.green{					
+		border: 1px solid @green;
+		&, &:focus{color: @white;}
+		&::before {
+			background: @green; 
+		}
+		&:hover {
+			color: @b-color;
+			background-color: transparent;
+		}
+	}
+}
+.btn-delete{
+	width: 32px;
+	height: 32px;
+	&:hover{
+		color: @color-pdf;
+	}
+}

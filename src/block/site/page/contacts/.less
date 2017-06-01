@@ -1,0 +1,85 @@
+.contacts-page{
+	position: relative;
+	@media @media-device{padding-bottom: 0}
+	@media @media-size-sm{
+		padding-top: 0;
+		height: ~"calc(100vh - @{navbar-top-sm} + 1px)";
+	}
+}
+._cnp__{
+	&row{
+		flex-wrap: wrap;
+		align-items: center;
+	}
+	&cols{
+		@media @media-size-xs{.makeCols(6, 12);}
+		@media @media-size-xs-l{
+			&:nth-child(1){order: 1;}
+			&:nth-child(2){order: 3;}
+			&:nth-child(3){order: 4;}
+			&:nth-child(4){order: 2;} 
+		}
+		@media @media-size-xxs{.makeCols(12, 12);}
+		@media @media-notsmart{.makeCols(12, 12);}
+	}
+	&panel{
+		@media @media-notsmart{
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			background: fadeout(@white, 20%);
+			z-index: 2;
+		}
+		@media @media-size-sm{padding: 50px; max-width: 380px;}
+		@media @media-screen{
+			padding: 6.3vw 4.5vw 3.3vw;
+			width: 40vw;
+			max-width: 550px;
+		}
+	}
+	&map{
+		@media @media-size-xs-p{
+			width: 100%;
+			height: 350px;
+		}
+		@media @media-size-xs-l{
+			width: 100%;
+			height: 250px;
+		}
+		@media @media-notsmart{
+			position: absolute;
+			z-index: 1;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+	}
+	&item{
+		padding-left: 45px;
+		position: relative;
+		font-size: @b-fs - 2px;
+		@media @media-device{margin-bottom: 25px;}
+		@media @media-screen{margin-bottom: 1.3vw}
+		a{
+			&, &:hover, &:focus{color: @b-color;}
+		}
+	}
+	&item-icon{
+		position: absolute;
+		top: 50%;
+		left: 0;
+		transform: translateY(-50%);
+		width: 35px;
+		height: 20px;
+		&.tel{
+			height: 40px;
+		}
+		&.address{
+			height: 30px;
+		}
+		svg{
+			fill: @green;
+		}
+	}
+}

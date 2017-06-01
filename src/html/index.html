@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ru-RU"> 
+	<head>
+		[[azbntple 
+			tpl="/src/block/site/default/head/.html" 
+			title=" "
+			description=" "
+		]] 		
+	</head>
+	<body class="index-page" >
+<!-- style="background-image: url({{url-path-img}}/bg/bg-index.jpg)"-->	
+
+		[[azbntple 
+			tpl="/src/block/site/default/navbar/.html"
+			class="navbar-site"
+			navbar_prefix="navbar__" 
+		]] 
+
+		[[azbntple 
+			tpl="/src/block/site/page/index/header/.html"
+			class="index-block-header"
+			prefix_block="_ibh__"  
+		]] 				
+		<div class="container">
+			<div class="index-block-content" role="main">
+				<div class="_icb__inner">
+					[[azbntple 
+						tpl="/src/block/site/page/index/catalog/.html"
+						class="catalog-block-header"
+						prefix_block="_cbh__"  
+					]]
+					[[azbntple 
+						tpl="/src/block/site/page/index/advantages/.html"
+						class="advantages-block-header"
+						prefix_block="_abh__"
+						heading_block="<span>Причины</span> выбрать нас"  
+					]]				
+				</div>
+				[[azbntple 
+					tpl="/src/block/site/default/form/fio-tel.html"
+					class="inline form-panel"
+					prefix_form="form__"
+					heading_form="У Вас есть вопросы?"
+					note_form="Оставьте свою заявку<br> и мы обязательно свяжемся с Вами в ближайшее время."
+					btn_name="Отправить заявку!"
+					btn_class="white"
+				]]
+			</div>
+		</div>
+		[[azbntple 
+			tpl="/src/block/site/default/footer/.html" 
+			class="footer-site"
+			prefix_block="footer__" 
+			class_social="social-block"
+			prefix_social="social__" 
+		]]
+
+		[[azbntple 
+			tpl="/src/block/site/default/modals/message.html"
+			heading_modals="Ваша заявка успешно отправлена!"
+			note_modals="Наши специалисты свяжутся с Вами в ближайшее время."
+			prefix_modals="modal-base__"
+			class_modals="modal-base"
+		]] 
+
+		[[azbntple tpl="/src/block/site/default/script/script.html" ]] 
+		[[azbntple tpl="/src/block/site/default/script/validationEngine.html" ]] 
+		[[azbntple tpl="/src/block/site/default/script/fancybox3.html" ]] 
+	</body>
+</html>

@@ -1,0 +1,38 @@
+.basket-page{}
+._bp__{
+	&deliver-row{
+		justify-content: flex-end;
+		@media @media-device{margin-bottom: 30px;}
+		@media @media-screen{margin-bottom: 2.5vw;}
+	}
+	&deliver-btn{
+		@media @media-notsmart{text-align: right;}
+	}
+	&cost-block{
+		display: flex;
+		align-items: center;
+		letter-spacing: 2px;
+		@media @media-size-xs{flex-wrap: wrap;}
+		@media @media-device{margin-bottom: 30px;}
+		@media @media-screen{margin-bottom: 3.7vw;}
+	}
+	&finish-cost{
+		display: flex;
+		align-items: center;
+		font-weight: 700;
+		font-family: @bague;
+		letter-spacing: 0;
+		.calcFontSize(22, 44, 320, 1680);
+		.calcLineHeight(28, 50, 320, 1680);		
+		font-size: 44px;
+		line-height: 50px;
+		@media @media-size-xs-l{margin-left: 25px;}
+		@media @media-notsmart{margin-left: 25px;}
+		span{
+		    display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin-left: 10px;
+		}
+	}
+}

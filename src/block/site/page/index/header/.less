@@ -1,0 +1,54 @@
+.index-block-header{
+	color: @white;
+	padding-top: 8.5vw;
+	padding-bottom: 4.5vw;    
+	position: relative;
+    z-index: 2;
+}
+._ibh__{
+	&container{
+		position: relative;
+	}
+	&note{
+		font-family: @rex;
+		position: relative;
+		z-index: 4;
+	}
+	&heading{
+		text-transform: uppercase;
+		@media @media-device{
+			.calcFontSize(44, 74, 320, 1024);
+			.calcLineHeight(44, 74, 320, 1024);			
+		}
+		@media @media-screen{
+			.calcFontSize(50, 108, 320, 1680);
+			.calcLineHeight(50, 108, 320, 1680);
+		}
+	}
+	&heading-small{   
+		text-transform: lowercase;
+		@media @media-device{
+			.calcFontSize(16, 22, 320, 1024);
+			.calcLineHeight(22, 36, 320, 1024); 		
+		}
+		@media @media-screen{
+			.calcFontSize(20, 38, 320, 1680);
+			.calcLineHeight(32, 54, 320, 1680); 
+		}
+	}
+	&img{
+		position: absolute;
+		right: 2.2vw;
+		top: -5.8vw;
+		background-image: url("@{url-path-img}/bg/bg-header.png");
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+		width: 62vw;
+		height: 29vw;
+		max-width: 1135px;
+		max-height: 535px;
+		@media @media-size-xs-p{display: none;}
+	}
+	&{}
+}

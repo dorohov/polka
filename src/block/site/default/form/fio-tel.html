@@ -1,0 +1,33 @@
+<form action="#" class="form-site {{class}}"  >
+	<h4 class="{{prefix_form}}heading">{{heading_form}}</h4>	
+	<div class="{{prefix_form}}note">{{note_form}}</div>	
+	<div class="row {{prefix_form}}row">
+		<div class="cols {{prefix_form}}cols full material-cols">
+			<div class="material-switch {{prefix_form}}item">
+                <input class="material-switch__input validate[required]" id="f[processing]" name="f[processing]" type="checkbox" checked />
+                <label for="f[processing]" class="material-switch__label"></label>
+				<label for="f[processing]" class="material-switch__text"> 
+					Я согласен на обработку <a href="/agreement.html">персональных данных</a>
+				</label>
+            </div>	
+		</div>
+		<div class="cols {{prefix_form}}cols">
+			<div class="{{prefix_form}}item">
+				<input type="text" class="{{prefix_form}}control form-control validate[required, custom[onlyLetterSp]]" id="f[name]" name="f[Имя]" placeholder="Укажите Ваше имя">
+			</div>	
+		</div>
+		<div class="cols {{prefix_form}}cols">
+			<div class="{{prefix_form}}item">
+				<input type="tel" class="{{prefix_form}}control form-control validate[required,custom[phone]]" id="f[tel]" name="f[Телефон]" placeholder="Укажите Ваш телефон"> 
+			</div>	
+		</div>
+		<div class="cols {{prefix_form}}cols">
+			<div class="{{prefix_form}}btn-block">
+				<button type="submit" class="btn-site btn-submit {{btn_class}} to--nobg {{prefix_form}}btn">					
+					{{btn_name}}
+				</button>
+			</div>	 
+		</div>
+		
+	</div>
+</form> 

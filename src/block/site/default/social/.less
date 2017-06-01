@@ -1,0 +1,47 @@
+.social-block{
+
+}
+.social__{
+	&row{}
+	&item{
+		display: block;
+		padding: 3px;
+		border-radius: 50%;
+		/*border: 2px solid;
+		border-color: @b-social-bc;*/
+		width: 36px;
+		height: 36px;
+		transition: @transition-site;
+		&._vk{padding: 0px;}
+		svg{
+			fill: @b-social-bc;
+			transition: @transition-site;		
+		}
+		&:hover{
+			&[href^="https://vk.com/"]{
+				svg{fill:@color-vk;}
+			}
+			&[href^="https://www.facebook.com/"]{
+				svg{fill:@color-fb;}
+			}
+			&[href^="https://www.instagram.com/"]{
+				svg{fill:@color-inst;}
+			}
+		}
+	}
+}
+.footer__social-{
+	&row{
+		justify-content: center;
+		@media @media-screen{
+			margin-right: -35px;
+			margin-left: -35px;
+		}
+	}
+	&cols{
+		@media @media-screen{
+			padding-right: 35px;
+			padding-left: 35px;
+		}
+	}
+}

@@ -1,0 +1,88 @@
+<div class="content-block {{class}}" role="main">
+	<div class="container content-container">
+		[[azbntple 
+			tpl="/src/block/site/default/breadcrumb/level1.html" 
+			prefix_bread="breadcrumb__"
+			prefix_block="_bp__" 
+			level_1="Корзина" 
+		]]
+		[[azbntple 
+			tpl="/src/block/site/default/page-header/heading.html" 
+			prefix_header="page-header__"
+			prefix_block="_bp__"  
+			header="Корзина"
+		]]
+		<div class="basket-list">
+			[[azbntple 
+				tpl="/src/block/site/default/basket/item.html" 
+				prefix_header="page-header__"
+				prefix_basket="basket-item__"  
+				link_basket="/catalog-item.html"  
+				preview_basket="/temp/catalog-preview-item1-sm.jpg"
+				header_basket="Полка прямая"
+				cost_basket="1 941"
+				option1="<span>Артикул</span> <div>00010</div>"  
+				option2="<span>Материал</span> <div>дерево</div>"  
+				option3="<span>Длина</span> <div>1000 мм</div>"  
+				option4="<span>Цвет</span> <div>сосна</div>"
+				option5="<span>Глубина</span> <div>220 мм</div>"
+			]]
+			[[azbntple 
+				tpl="/src/block/site/default/basket/item.html" 
+				prefix_header="page-header__"
+				prefix_basket="basket-item__"  
+				link_basket="/catalog-item.html"  
+				preview_basket="/temp/catalog-preview-item1-sm.jpg"
+				header_basket="Полка прямая"
+				cost_basket="1 941"
+				option1="<span>Артикул</span> <div>00010</div>"  
+				option2="<span>Материал</span> <div>дерево</div>"  
+				option3="<span>Длина</span> <div>1000 мм</div>"  
+				option4="<span>Цвет</span> <div>сосна</div>"
+				option5="<span>Глубина</span> <div>220 мм</div>"
+			]]
+			[[azbntple 
+				tpl="/src/block/site/default/basket/item.html" 
+				prefix_header="page-header__"
+				prefix_basket="basket-item__"  
+				link_basket="/catalog-item.html"  
+				preview_basket="/temp/catalog-preview-item1-sm.jpg"
+				header_basket="Полка прямая"
+				cost_basket="1 941"
+				option1="<span>Артикул</span> <div>00010</div>"  
+				option2="<span>Материал</span> <div>дерево</div>"  
+				option3="<span>Длина</span> <div>1000 мм</div>"  
+				option4="<span>Цвет</span> <div>сосна</div>"
+				option5="<span>Глубина</span> <div>220 мм</div>"
+			]]
+		</div>
+		<div class="row {{prefix_block}}deliver-row">
+			<div class="cols">
+				<div class="{{prefix_block}}cost-block">Общая стоимость: 
+					<div class="{{prefix_block}}finish-cost">
+						<div>5823</div>
+						<span>[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="ruble"]]</span>
+					</div>					
+				</div>
+				<div class="{{prefix_block}}deliver-btn">
+					<button type="button" class="btn-site btn-deliver btn-arrow to--nobg" data-toggle="collapse" data-target="#deliver-form">
+						Оформить заказ
+						<span>[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="arrow-next"]]</span>
+					</button>
+				</div>
+			</div>
+		</div>
+		<div id="deliver-form" class="collapse">
+			[[azbntple 
+				tpl="/src/block/site/default/form/fio-tel-email.html"
+				class="inline deliver"
+				prefix_form="form__"
+				heading_form="Оформить заявку"
+				note_form="Вы можете оставить свою заявку<br> и мы обязательно свяжемся с Вами в ближайшее время."
+				btn_name="Отправить заявку!"
+				btn_class="green"
+			]]
+		</div>
+		
+	</div>
+</div>

@@ -1,0 +1,10 @@
+<script src="{{url-path-js}}/plax.js"></script>
+<script>
+	if(!device.mobile() && !device.tablet()){
+	  	$(document).ready(function () {        
+			$('.header-preview .parallax-plax').plaxify()
+			$('._hp__layer1').plaxify({"xRange":10,"yRange":0,"invert":true,})
+			$.plax.enable()
+		});
+	  }
+</script>

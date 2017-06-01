@@ -1,0 +1,162 @@
+<div class="content-block {{class}}" role="main">
+	<div class="container content-container">
+		[[azbntple 
+			tpl="/src/block/site/default/breadcrumb/level2.html" 
+			prefix_bread="breadcrumb__"
+			prefix_block="_cp__" 
+			level_1="Каталог элементов" 
+			level_1_link="catalog.html"
+			level_2="Полка прямая"  
+		]]
+		<div class="row {{prefix_block}}row">
+			<div class="cols {{prefix_block}}cols cols-7">
+				<a href="{{url-path-img}}/temp/catalog-item1-lg.jpg" class="{{prefix_block}}preview" data-fancybox="gallery-preview" style="background-image: url({{url-path-img}}/temp/catalog-item1-lg.jpg)">
+				</a>
+			</div>
+			<div class="cols {{prefix_block}}cols cols-5">				
+				[[azbntple 
+					tpl="/src/block/site/default/page-header/catalog.html" 
+					prefix_header="page-header__"
+					prefix_block="_cp__"  
+					code="010" 
+					header="Полка прямая" 
+				]]
+				<div class="text-block {{prefix_block}}text">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, rem perspiciatis cum aspernatur ipsum quas quae sit unde quo laudantium enim quod ut in, iste ab ex minima, maiores totam.</p>
+				</div>				
+				<div class="row {{prefix_block}}filter-row">
+					<div class="cols {{prefix_block}}filter-cols cols-12">
+						[[azbntple 
+							tpl="/src/block/site/default/catalog/filter/material.html" 
+							prefix_filter="catalog-filter__"
+							prefix_block="_cip__"  
+							heading_filter="Материал"
+							item1_filter="Дерево"
+							item2_filter="Металл"
+							item3_filter="Стекло"
+						]]
+					</div>
+					<div class="cols {{prefix_block}}filter-cols">
+						[[azbntple 
+							tpl="/src/block/site/default/catalog/filter/collapse-color.html" 
+							prefix_filter="catalog-filter__"
+							prefix_block="_cip__"  
+							heading_filter="Цвет"
+							dropdown_filter="img"
+							color_img_filter="/temp/catalog-color.jpg"
+							color_name_filter="Орех"
+						]]
+					</div>
+					<div class="cols {{prefix_block}}filter-cols">
+						[[azbntple 
+							tpl="/src/block/site/default/catalog/filter/collapse.html" 
+							prefix_filter="catalog-filter__"
+							prefix_block="_cip__"  
+							heading_filter="Длина"
+							measure_filter="(L)"
+							dropdown_filter=" "
+						]]
+					</div>
+					<div class="cols {{prefix_block}}filter-cols">
+						[[azbntple 
+							tpl="/src/block/site/default/catalog/filter/collapse.html" 
+							prefix_filter="catalog-filter__"
+							prefix_block="_cip__"  
+							heading_filter="Глубина"
+							measure_filter="(d)"
+							dropdown_filter=" "
+						]]
+					</div>
+					<div class="cols {{prefix_block}}filter-cols cols-12">
+						[[azbntple 
+							tpl="/src/block/site/default/catalog/filter/qty.html" 
+							prefix_filter="catalog-filter__"
+							class_filter="qty"
+							prefix_block="_cip__"
+						]]
+					</div>
+				</div>
+				<div class="row {{prefix_block}}cost-row">
+					<div class="cols {{prefix_block}}cost-cols">
+						<div class="{{prefix_block}}cost-status">В наличии</div>
+						<div class="{{prefix_block}}cost-price">
+							1 941
+							<span>[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="ruble"]]</span>
+						</div>
+					</div>
+					<div class="cols {{prefix_block}}cost-cols">
+						<button type="button" class="btn-site btn-basket btn-arrow to--nobg">
+							В корзину
+							<span>[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="arrow-next"]]</span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="{{prefix_block}}more-catalog">
+			<h3 class="{{prefix_block}}more-heading">С этим товаром также заказывают</h3>
+			<div class="row {{prefix_block}}row">
+				<div class="cols {{prefix_block}}cols cols-2">
+					[[azbntple 
+						tpl="/src/block/site/default/catalog/element.html"
+						prefix_block="_cp__" 
+						catalog_prefix="catalog-element__" 
+						catalog_class="more"
+						catalog_preview="/temp/catalog-item1.jpg"
+						catalog_link="/catalog-item.html"
+						catalog_heading="Прямые полки"
+						catalog_cost="500"
+					]]
+				</div>
+				<div class="cols {{prefix_block}}cols cols-2">
+					[[azbntple 
+						tpl="/src/block/site/default/catalog/element.html"
+						prefix_block="_cp__" 
+						catalog_prefix="catalog-element__" 
+						catalog_class="more"
+						catalog_preview="/temp/catalog-item1.jpg"
+						catalog_link="/catalog-item.html"
+						catalog_heading="Прямые полки"
+						catalog_cost="500"
+					]]
+				</div>
+				<div class="cols {{prefix_block}}cols cols-2">
+					[[azbntple 
+						tpl="/src/block/site/default/catalog/element.html"
+						prefix_block="_cp__" 
+						catalog_prefix="catalog-element__" 
+						catalog_class="more"
+						catalog_preview="/temp/catalog-item1.jpg"
+						catalog_link="/catalog-item.html"
+						catalog_heading="Прямые полки"
+						catalog_cost="500"
+					]]
+				</div>
+				<div class="cols {{prefix_block}}cols cols-2">
+					[[azbntple 
+						tpl="/src/block/site/default/catalog/element.html"
+						prefix_block="_cp__" 
+						catalog_prefix="catalog-element__" 
+						catalog_class="more"
+						catalog_preview="/temp/catalog-item1.jpg"
+						catalog_link="/catalog-item.html"
+						catalog_heading="Прямые полки"
+						catalog_cost="500"
+					]]
+				</div>
+				<div class="cols {{prefix_block}}cols cols-2">
+					[[azbntple 
+						tpl="/src/block/site/default/catalog/element.html"
+						prefix_block="_cp__" 
+						catalog_prefix="catalog-element__" 
+						catalog_class="more"
+						catalog_preview="/temp/catalog-item1.jpg"
+						catalog_link="/catalog-item.html"
+						catalog_heading="Прямые полки"
+						catalog_cost="500"
+					]]
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

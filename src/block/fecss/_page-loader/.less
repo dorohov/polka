@@ -1,0 +1,240 @@
+		/*.full-screen.page-loader {
+			@dark-el-color-bg:rgba(0,0,0,0.75);
+			@dark-el-color-font:#ffffff;
+			
+			@semi-dark-el-color-bg:rgba(0,0,0,0.4);
+			@semi-dark-el-color-font:#ffffff;
+			
+			transition: all 0.7s ease;
+			
+			opacity:0;
+			height: 0%;
+			
+			&.active {
+				opacity:1;
+				height: 100%;
+			}
+			
+			.process-container {
+				display:block;
+				position:relative;
+				width:300px;
+				height:3em;
+				line-height:3em;
+				margin:2em auto;
+				white-space:nowrap;
+				#fe.uppercase(lowercase);
+				#fe.bold();
+				#fe.size(1em);
+				#fe.bg(transparent);
+				#fe.color(@dark-el-color-font);
+				
+				.process-level {
+					position:absolute;
+					left:50%;
+					top:0;
+					display:block;
+					width: 0%;
+					height:100%;
+					margin:0 auto;
+					z-index:0;
+					overflow-x:hidden;
+					text-align:center;
+					#fe.underline(none);
+					
+					#fe.bg(@dark-el-color-font);
+					animation: processloading 1s infinite;
+				}
+				
+			}
+			
+			.close-loader {
+				position:relative;
+				z-index:2;
+				display:block;
+				margin:2em auto;
+				width:30em;
+				height:3em;
+				line-height:3em;
+				#fe.bold();
+				#fe.size(1em);
+				#fe.underline(none);
+				#fe.uppercase();
+				#fe.bg(@dark-el-color-font * 0.6);
+				#fe.color(@dark-el-color-bg);
+				
+				transition: all 0.4s ease;
+				
+				&:hover {
+					#fe.bg(@dark-el-color-font);
+				}
+			}
+		}*/
+		
+		/*.page-loader ._azbn__preloader-percent {
+			position: absolute;
+			color: rgba(200,200,200,0.3);
+			font-size: 120px;
+			//#fe.ff(@calibri-bold);
+			z-index:1;
+			top: 51%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+		
+		.page-loader {
+			@media @media-device{
+				display:none;
+			}
+		}*/
+._czr__loader{
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	vertical-align: middle;
+	text-align: center;
+	display: none;
+	background: @white;
+	&.active{
+		display: block;
+		z-index: 10000;
+	}
+}
+._czr__preloader-inner{
+	height: 100%;
+}
+._czr__preloader-center{	
+	height: 100%;
+	display: flex;	
+	justify-content: center;
+	align-items: center;
+	padding: 50px;
+}
+._czr__preloader-process-container {
+	display:block;
+	position:relative;
+	width: 100%;
+	height: 6px;
+	background: transparent;	
+}
+._czr__preloader-process-level{
+	position:absolute;
+	left:0;
+	top:0;
+	display:block;
+	width: 0%;
+	height:100%;
+	margin:0 auto;
+	z-index:0;
+	background: @white;
+	transition: all 0.3s ease;
+}
+._czr__preloader-inner{
+	height: 100%;
+}
+._czr__preloader-center{	
+	height: 100%;
+	width: 100%;
+	display: flex;	
+	justify-content: center;
+	align-items: center;
+	padding: 50px;
+}
+._czr__preloader-process-container {
+	display:block;
+	position:relative;
+	width: 100%;
+	height: 6px;
+	background: transparent;	
+}
+._czr__preloader-process-level{
+	position:absolute;
+	left:0;
+	top:0;
+	display:block;
+	width: 0%;
+	height:100%;
+	margin:0 auto;
+	z-index:0;
+	background: @blue-light;
+	transition: all 0.3s ease;
+} 
+
+
+.preload-anim__{
+	&block{
+		position: fixed;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		display: none;
+		background: @white;
+		//&.active{
+			display: block;
+			z-index: 21474836455;
+		//}
+		&.ready{ 
+			animation-name: loader;
+			animation-delay: 0.3s;
+			animation-duration: .8s;
+			animation-iteration-count: 1;
+			animation-fill-mode: forwards;
+			animation-timing-function: linear;				
+		}		
+	}
+	&inner{
+		width: 100%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	&close{
+		display: block;
+		max-width: 350px;
+		max-height: 350px;
+	}
+
+}
+
+@keyframes loader-fade{
+	from {
+		opacity: 1;
+		visibility: visible;
+	}
+	75%{
+		opacity: 0;
+	}
+	to {
+		opacity: 0;
+		visibility: hidden;
+	}
+}
+@keyframes loader{
+	from {
+		opacity: 1;
+		transform: translateX(0);
+		visibility: visible;
+	}
+	75%{
+		opacity: 1;
+		transform: translateX(100%);
+	}
+	to {
+		opacity: 0;
+		transform: translateX(100%);
+		visibility: hidden;
+	}
+}
+/*
+@keyframes loader-level{
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+}*/

@@ -1,0 +1,31 @@
+{
+	"contacts":{
+		"name":"polka.com.ru",
+		"domain":"polka.com.ru",
+		"domain_link":"http://polka.com.ru/",
+		"agreement_page":"agreement",
+		"copyright":"polka.com.ru",
+		"email":"polki.com@mail.ru",
+		"phone":"+7 (910) 208-87-90",
+		"phone_tel":"+79102088790",
+		"phone2":"+7 (910) 208-76-84",
+		"phone2_tel":"+79102087684",
+		"address":"г. Орёл, ул. Тургенева, дом 3"
+	},
+	"soc":{
+		"vk":"https://vk.com/",
+		"fb":"https://www.facebook.com/",
+		"ok":"https://ok.ru/",
+		"inst":"https://www.instagram.com/"
+	},
+	"url-path-css": "/wp-content/themes/azbnbasetheme/css",
+	"url-path-css":"/css",
+	"url-path-img": "/wp-content/themes/azbnbasetheme/img",
+	"url-path-img":"/img",
+	"url-path-js": "/wp-content/themes/azbnbasetheme/js",
+	"url-path-js":"/js",
+	"url-path-plugins": "/wp-content/themes/azbnbasetheme/plugins",
+	"url-path-plugins":"/plugins",
+	"url-path-favicon": "/wp-content/themes/azbnbasetheme/favicon",
+	"url-path-favicon":"/favicon"
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ru-RU"> 
+	<head>
+		[[azbntple 
+			tpl="/src/block/site/default/head/.html" 
+			title=" "
+			description=" "
+		]] 		
+	</head>
+	<body>	
+
+		[[azbntple 
+			tpl="/src/block/site/default/navbar/.html"
+			class="navbar-site"
+			navbar_prefix="navbar__" 
+		]]
+		[[azbntple 
+			tpl="/src/block/site/page/404/.html"
+			class="error-page"
+			prefix_block="_ep__"    
+		]]
+
+		[[azbntple 
+			tpl="/src/block/site/default/footer/.html" 
+			class="footer-site"
+			prefix_block="footer__" 
+			class_social="social-block"
+			prefix_social="social__" 
+		]]
+
+		[[azbntple tpl="/src/block/site/default/script/script.html" ]] 
+	</body>
+</html>

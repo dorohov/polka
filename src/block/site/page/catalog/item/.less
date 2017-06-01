@@ -1,0 +1,109 @@
+.catalog-item-page{}
+._cip__{
+	&row{
+		flex-wrap: wrap;
+		margin-top: -30px;
+		@media @media-device {margin-bottom: 30px;}
+		@media @media-screen {margin-bottom: 2.2vw;}
+	}
+	&cols{
+		padding-top: 30px;
+		//padding-right: 10px;
+		&.cols-2{
+			@media @media-size-xs-l{.makeCols(6, 12);}
+			@media @media-size-xxs{.makeCols(12, 12);}
+			@media @media-size-sm{.makeCols(4, 12);}
+			@media @media-screen{.makeCols(2.4, 12);}
+		}
+		&.cols-7{
+			@media @media-device{.makeCols(12, 12);}
+			@media @media-screen{.makeCols(7, 12);}
+		}
+		&.cols-5{
+			@media @media-device{.makeCols(12, 12);}
+			@media @media-screen{.makeCols(5, 12);}
+		}
+	}
+	&preview{
+		display: block;
+		width: 100%;
+		background-repeat: no-repeat;
+		background-position: center;		
+		@media @media-device{
+			height: 250px;
+			background-size: contain;
+		}
+		@media @media-screen{
+			background-size: cover;
+			max-height: 570px;
+			height: 31vw;
+		}
+	}
+	&text{
+		font-size: @b-fs - 2px;
+		@media @media-device{margin-bottom: 35px}
+		@media @media-screen{margin-bottom: 3vw}
+	}
+	&filter-row{
+		flex-wrap: wrap;
+		margin-left: -10px;
+		margin-right: -10px;
+		margin-bottom: 25px;
+	}
+	&filter-cols{
+		padding-left: 10px;
+		padding-right: 10px;
+		@media @media-size-xxs{.makeCols(12, 12);}		
+		&.cols-12{
+			.makeCols(12, 12);
+		}		
+	}
+	&cost-row{
+		flex-wrap: wrap;
+		margin-top: -20px;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&cost-cols{
+		padding-top: 20px;
+	}
+	&cost-status{
+		font-size: @b-fs - 2px;	
+		margin-bottom: 5px;	
+	}
+	&cost-price{
+		font-family: @bague;
+		position: relative;
+		padding-right: 50px;
+		.calcFontSize(22, 42, 320, 1680);
+		.calcLineHeight(28, 48, 320, 1680);	
+		@media @media-device{
+			padding-right: 40px;
+		}
+		span{
+			top: 50%;
+			right: 0;
+			transform: translateY(-50%);
+			width: 45px;
+			height: 45px;
+			display: block;
+			position: absolute;
+			svg{display: block;}
+			@media @media-device{   
+				width: 30px;
+				height: 30px;
+			}
+		}	
+	}
+	&more-catalog{
+		@media @media-device{padding-top: 30px;}
+		@media @media-screen{padding-top: 1vw;}
+	}
+	&more-heading{
+		.calcFontSize(18, 23, 320, 1680);
+		.calcLineHeight(26, 30, 320, 1680);	
+		@media @media-device{margin-bottom: 30px;}
+		@media @media-screen{margin-bottom: 3.5vw;}
+
+	}
+}
