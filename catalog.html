@@ -20,7 +20,7 @@
 
 <link href="/css/site.css" rel="stylesheet"> 		
 	</head>
-	<body>	
+	<body class="is--catalog">	
 
 		 <nav class="navbar navbar-site">
  	<div class="container navbar__container">
@@ -58,8 +58,14 @@
 							</li>		 	
 							<li class="navbar__nav-item">
 								<a href="/about.html" class="navbar__nav-link">О компании</a> 
+							</li>	 	
+							<li class="navbar__nav-item">
+								<a href="/catalog.html" class="navbar__nav-link">Каталог элементов</a> 
+							</li> 	
+							<li class="navbar__nav-item">
+								<a href="/catalog-ready.html" class="navbar__nav-link">Готовые решения</a> 
 							</li>
-							<li class="navbar__nav-item dropdown">
+							<!--<li class="navbar__nav-item dropdown">
 								<a href="#" class="navbar__nav-link dropdown-toggle" data-toggle="dropdown">
 									<span class="_icon"><svg class="icon-svg icon-arrow-down" role="img">
 	<use xlink:href="/img/svg/sprite.svg#arrow-down"></use>
@@ -73,9 +79,10 @@
 										<a href="/catalog-ready.html" class="navbar__dropdown-link">Готовые решения</a>
 									</li>
 								</ul>
+							</li>-->
 									 	
 							<li class="navbar__nav-item">
-								<a href="/projects.html" class="navbar__nav-link">Реализованные проекты</a> 
+								<a href="/projects.html" class="navbar__nav-link">Наши проекты</a> 
 							</li>	 	
 							<li class="navbar__nav-item">
 								<a href="/delivery.html" class="navbar__nav-link">Доставка и оплата</a> 
@@ -127,24 +134,94 @@
 </div>
 
 		<div class="page-header-block">
-	<div class="page-header__row row">
-		<div class="cols page-header__cols">
-			<h1 class="page-header__heading">Каталог элементов</h1>
-		</div>
-		<div class="cols page-header__cols">
-			<a href="/catalog-ready.html" class="btn-site btn-heading to--bg btn-arrow">
-				Готовые решения
-				<span><svg class="icon-svg icon-arrow-next" role="img">
-	<use xlink:href="/img/svg/sprite.svg#arrow-next"></use>
-</svg></span>
-			</a>
+	<h1 class="page-header__heading">Каталог элементов</h1>		
+</div>
+		<div class="row _cp__row  is--nomargin">
+			<div class="cols _cp__cols  is--cols-3">				
+				<div class="catalog-navbar__block dropdown">
+	<a href="#" data-toggle="dropdown" class="catalog-navbar__btn-block">
+		<div class="container">
+			<div class="catalog-navbar__btn">
+				<div class="catalog-navbar__btn-hamb">
+					<div class="catalog-navbar__btn-hamb-item  is--top"></div>
+					<div class="catalog-navbar__btn-hamb-item  is--center"></div>
+					<div class="catalog-navbar__btn-hamb-item  is--bottom"></div>
+					<div class="catalog-navbar__btn-hamb-item  is--left-top"></div>
+					<div class="catalog-navbar__btn-hamb-item  is--right-top"></div>
+				</div>
+				<div class="catalog-navbar__btn-name">
+					Разделы каталога
+				</div>
+			</div>		
+		</div>		
+	</a>
+	<div class="catalog-navbar__dropdown">
+		<div class="catalog-navbar__dropdown-inner">
+			<ul class="catalog-navbar__nav">
+				<li class="catalog-navbar__item ">
+					<a class="catalog-navbar__link" href="#">ARTFIX</a>
+				</li>
+				<li class="catalog-navbar__item ">
+					<a class="catalog-navbar__link" href="#">Прямые полки деревянные</a>
+				</li>
+				<li class="catalog-navbar__item ">
+					<a class="catalog-navbar__link" href="#">Прямые полки стеклянные</a>
+				</li>
+				<li class="catalog-navbar__item is--active">
+					<a class="catalog-navbar__link" href="#">Криволинейные полки</a>
+				</li>
+				<li class="catalog-navbar__item ">
+					<a class="catalog-navbar__link" href="#">Угловые полки</a>
+				</li>
+				<li class="catalog-navbar__item ">
+					<a class="catalog-navbar__link" href="#">Фигурные полки</a>
+				</li>
+				<li class="catalog-navbar__item ">
+					<a class="catalog-navbar__link" href="#">Переходные полки</a>
+				</li>
+				<li class="catalog-navbar__item ">
+					<a class="catalog-navbar__link" href="#">Стекло</a>
+				</li>
+				<li class="catalog-navbar__item ">
+					<a class="catalog-navbar__link" href="#">Ящики</a>
+				</li>
+				<li class="catalog-navbar__item ">
+					<a class="catalog-navbar__link" href="#">Аксессуары</a>
+				</li>
+				<li class="catalog-navbar__item ">
+					<a class="catalog-navbar__link" href="#">Дверки (фасады)</a>
+				</li>
+			</ul>
 		</div>
 	</div>
 </div>
-		<div class="row _cp__row">
-			<div class="cols _cp__cols cols-6">
-				<div class="catalog-element  ">	
-	<a href="/catalog-item.html" class="catalog-element__preview" style="background-image: url(/img/temp/catalog-item1.jpg);">
+				
+			</div>
+			<div class="cols _cp__cols  is--cols-9">
+				<div class="row _cp__card-row">
+					<div class="cols _cp__card-cols is--cols-4">
+						<div class="catalog-element  ">	
+	<a href="/catalog-item.html" class="catalog-element__preview" style="background-image: url(/img/temp/catalog-item1-485x290.png);">
+	</a>
+	<div class="catalog-element__note">
+		<h4 class="catalog-element__heading">Радиусная</h4>
+		<div class="catalog-element__cost">
+			500 
+			<span><svg class="icon-svg icon-ruble" role="img">
+	<use xlink:href="/img/svg/sprite.svg#ruble"></use>
+</svg></span>
+		</div>
+		<a href="/catalog-item.html" class="catalog-element__link">
+			<span><svg class="icon-svg icon-arrow-next-flat" role="img">
+	<use xlink:href="/img/svg/sprite.svg#arrow-next-flat"></use>
+</svg></span>
+		</a>
+	</div>	
+</div>
+					</div>
+					<div class="cols _cp__card-cols is--cols-4">			
+						<div class="catalog-element  ">	
+	<a href="/catalog-item.html" class="catalog-element__preview" style="background-image: url(/img/temp/catalog-item1-485x290.png);">
 	</a>
 	<div class="catalog-element__note">
 		<h4 class="catalog-element__heading">Прямые полки</h4>
@@ -161,10 +238,10 @@
 		</a>
 	</div>	
 </div>
-			</div>
-			<div class="cols _cp__cols cols-3">			
-				<div class="catalog-element  ">	
-	<a href="/catalog-item.html" class="catalog-element__preview" style="background-image: url(/img/temp/catalog-item1.jpg);">
+					</div>
+					<div class="cols _cp__card-cols is--cols-4">			
+						<div class="catalog-element  ">	
+	<a href="/catalog-item.html" class="catalog-element__preview" style="background-image: url(/img/temp/catalog-item1-485x290.png);">
 	</a>
 	<div class="catalog-element__note">
 		<h4 class="catalog-element__heading">Прямые полки</h4>
@@ -181,10 +258,10 @@
 		</a>
 	</div>	
 </div>
-			</div>
-			<div class="cols _cp__cols cols-3">			
-				<div class="catalog-element  ">	
-	<a href="/catalog-item.html" class="catalog-element__preview" style="background-image: url(/img/temp/catalog-item1.jpg);">
+					</div>
+					<div class="cols _cp__card-cols is--cols-4">			
+						<div class="catalog-element  ">	
+	<a href="/catalog-item.html" class="catalog-element__preview" style="background-image: url(/img/temp/catalog-item1-485x290.png);">
 	</a>
 	<div class="catalog-element__note">
 		<h4 class="catalog-element__heading">Прямые полки</h4>
@@ -201,10 +278,10 @@
 		</a>
 	</div>	
 </div>
-			</div>
-			<div class="cols _cp__cols cols-3">			
-				<div class="catalog-element  ">	
-	<a href="/catalog-item.html" class="catalog-element__preview" style="background-image: url(/img/temp/catalog-item1.jpg);">
+					</div>
+					<div class="cols _cp__card-cols is--cols-4">			
+						<div class="catalog-element  ">	
+	<a href="/catalog-item.html" class="catalog-element__preview" style="background-image: url(/img/temp/catalog-item1-485x290.png);">
 	</a>
 	<div class="catalog-element__note">
 		<h4 class="catalog-element__heading">Прямые полки</h4>
@@ -221,130 +298,20 @@
 		</a>
 	</div>	
 </div>
-			</div>
-			<div class="cols _cp__cols cols-3">			
-				<div class="catalog-element  ">	
-	<a href="/catalog-item.html" class="catalog-element__preview" style="background-image: url(/img/temp/catalog-item1.jpg);">
-	</a>
-	<div class="catalog-element__note">
-		<h4 class="catalog-element__heading">Прямые полки</h4>
-		<div class="catalog-element__cost">
-			500 
-			<span><svg class="icon-svg icon-ruble" role="img">
-	<use xlink:href="/img/svg/sprite.svg#ruble"></use>
-</svg></span>
-		</div>
-		<a href="/catalog-item.html" class="catalog-element__link">
-			<span><svg class="icon-svg icon-arrow-next-flat" role="img">
+					</div>
+					<div class="cols _cp__card-cols is--cols-4">
+						<a href="/catalog-ready.html" class="catalog-link__item">
+							<div class="catalog-link__inner">
+								<div class="catalog-link__heading">
+									Готовые решения <span><svg class="icon-svg icon-arrow-next-flat" role="img">
 	<use xlink:href="/img/svg/sprite.svg#arrow-next-flat"></use>
 </svg></span>
-		</a>
-	</div>	
-</div>
-			</div>
-			<div class="cols _cp__cols cols-3">			
-				<div class="catalog-element  ">	
-	<a href="/catalog-item.html" class="catalog-element__preview" style="background-image: url(/img/temp/catalog-item1.jpg);">
-	</a>
-	<div class="catalog-element__note">
-		<h4 class="catalog-element__heading">Прямые полки</h4>
-		<div class="catalog-element__cost">
-			500 
-			<span><svg class="icon-svg icon-ruble" role="img">
-	<use xlink:href="/img/svg/sprite.svg#ruble"></use>
-</svg></span>
-		</div>
-		<a href="/catalog-item.html" class="catalog-element__link">
-			<span><svg class="icon-svg icon-arrow-next-flat" role="img">
-	<use xlink:href="/img/svg/sprite.svg#arrow-next-flat"></use>
-</svg></span>
-		</a>
-	</div>	
-</div>
-			</div>
-			<div class="cols _cp__cols cols-3">			
-				<div class="catalog-element  ">	
-	<a href="/catalog-item.html" class="catalog-element__preview" style="background-image: url(/img/temp/catalog-item1.jpg);">
-	</a>
-	<div class="catalog-element__note">
-		<h4 class="catalog-element__heading">Прямые полки</h4>
-		<div class="catalog-element__cost">
-			500 
-			<span><svg class="icon-svg icon-ruble" role="img">
-	<use xlink:href="/img/svg/sprite.svg#ruble"></use>
-</svg></span>
-		</div>
-		<a href="/catalog-item.html" class="catalog-element__link">
-			<span><svg class="icon-svg icon-arrow-next-flat" role="img">
-	<use xlink:href="/img/svg/sprite.svg#arrow-next-flat"></use>
-</svg></span>
-		</a>
-	</div>	
-</div>
-			</div>
-			<div class="cols _cp__cols cols-3">			
-				<div class="catalog-element  ">	
-	<a href="/catalog-item.html" class="catalog-element__preview" style="background-image: url(/img/temp/catalog-item1.jpg);">
-	</a>
-	<div class="catalog-element__note">
-		<h4 class="catalog-element__heading">Прямые полки</h4>
-		<div class="catalog-element__cost">
-			500 
-			<span><svg class="icon-svg icon-ruble" role="img">
-	<use xlink:href="/img/svg/sprite.svg#ruble"></use>
-</svg></span>
-		</div>
-		<a href="/catalog-item.html" class="catalog-element__link">
-			<span><svg class="icon-svg icon-arrow-next-flat" role="img">
-	<use xlink:href="/img/svg/sprite.svg#arrow-next-flat"></use>
-</svg></span>
-		</a>
-	</div>	
-</div>
-			</div>
-			<div class="cols _cp__cols cols-3">			
-				<div class="catalog-element  ">	
-	<a href="/catalog-item.html" class="catalog-element__preview" style="background-image: url(/img/temp/catalog-item1.jpg);">
-	</a>
-	<div class="catalog-element__note">
-		<h4 class="catalog-element__heading">Прямые полки</h4>
-		<div class="catalog-element__cost">
-			500 
-			<span><svg class="icon-svg icon-ruble" role="img">
-	<use xlink:href="/img/svg/sprite.svg#ruble"></use>
-</svg></span>
-		</div>
-		<a href="/catalog-item.html" class="catalog-element__link">
-			<span><svg class="icon-svg icon-arrow-next-flat" role="img">
-	<use xlink:href="/img/svg/sprite.svg#arrow-next-flat"></use>
-</svg></span>
-		</a>
-	</div>	
-</div>
-			</div>
-			<div class="cols _cp__cols cols-6">			
-				<div class="catalog-element  ">	
-	<a href="/catalog-item.html" class="catalog-element__preview" style="background-image: url(/img/temp/catalog-item1.jpg);">
-	</a>
-	<div class="catalog-element__note">
-		<h4 class="catalog-element__heading">Прямые полки</h4>
-		<div class="catalog-element__cost">
-			500 
-			<span><svg class="icon-svg icon-ruble" role="img">
-	<use xlink:href="/img/svg/sprite.svg#ruble"></use>
-</svg></span>
-		</div>
-		<a href="/catalog-item.html" class="catalog-element__link">
-			<span><svg class="icon-svg icon-arrow-next-flat" role="img">
-	<use xlink:href="/img/svg/sprite.svg#arrow-next-flat"></use>
-</svg></span>
-		</a>
-	</div>	
-</div>
-			</div>
-		</div>
-
-		<div class="pagination-block _cp__pagination-block">
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="pagination-block _cp__pagination-block">
 	<ul class="pagination__list">
 		<li class="pagination__list-item is--active">
 			<a href="#" class="pagination__list-link">1</a>
@@ -360,6 +327,10 @@
 		</li>
 	</ul>
 </div>
+			</div>
+		</div>
+
+		
 		
 	</div>
 </div>
@@ -367,15 +338,29 @@
 		<footer class="footer-site">	
 	<div class="container footer__container">
 		<div class="row footer__row">			
-			<div class="cols footer__contacts-cols">
-				<div class="footer__contacts-item">
-					<a href="tel:+79102088790" class="footer__phone">+7 (910) 208-87-90</a>
-				</div>
-				<div class="footer__contacts-item">
-					<a href="tel:+79102087684" class="footer__phone">+7 (910) 208-76-84</a>
+			<div class="cols footer__cols  is--contacts">
+				<div class="row footer__contacts-row">	
+					<div class="cols footer__contacts-cols">	
+						<div class="footer__contacts-item">
+							<a href="tel:+79102088790" class="footer__phone">+7 (910) 208-87-90</a>
+						</div>
+					</div>
+					<div class="cols footer__contacts-cols">	
+						<div class="footer__contacts-item">
+							<a href="tel:+79102087684" class="footer__phone">+7 (910) 208-76-84</a>
+						</div>
+					</div>
 				</div>
 			</div>
-			<div class="cols footer__soc-cols">				
+			<div class="cols footer__cols  is--btn">
+				<button type="button" class="btn-site to--bg btn-arrow  btn-footer" data-toggle="modal" data-target="#modal-order">
+					Заказ по индивидуальному проекту
+					<span><svg class="icon-svg icon-arrow-next" role="img">
+	<use xlink:href="/img/svg/sprite.svg#arrow-next"></use>
+</svg></span>
+				</button>
+			</div>			
+			<div class="cols footer__cols  is--soc">				
 				<div class="social-block">
 	<div class="row social__row footer__social-row">
 		<div class="cols footer__social-cols">
@@ -402,7 +387,7 @@
 	</div>
 </div>  
 			</div>
-			<div class="cols footer__dorohovdesign-cols">
+			<div class="cols footer__cols  is--dorohovdesign">
 				<div class="row footer__dorohovdesign__row"> 
 					<div class="cols">
 						<div>Создание сайта</div>

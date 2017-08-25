@@ -1,15 +1,27 @@
 <footer class="{{class}}">	
 	<div class="container {{prefix_block}}container">
 		<div class="row {{prefix_block}}row">			
-			<div class="cols {{prefix_block}}contacts-cols">
-				<div class="{{prefix_block}}contacts-item">
-					<a href="tel:{{contacts.phone_tel}}" class="{{prefix_block}}phone">{{contacts.phone}}</a>
-				</div>
-				<div class="{{prefix_block}}contacts-item">
-					<a href="tel:{{contacts.phone2_tel}}" class="{{prefix_block}}phone">{{contacts.phone2}}</a>
+			<div class="cols {{prefix_block}}cols  is--contacts">
+				<div class="row {{prefix_block}}contacts-row">	
+					<div class="cols {{prefix_block}}contacts-cols">	
+						<div class="{{prefix_block}}contacts-item">
+							<a href="tel:{{contacts.phone_tel}}" class="{{prefix_block}}phone">{{contacts.phone}}</a>
+						</div>
+					</div>
+					<div class="cols {{prefix_block}}contacts-cols">	
+						<div class="{{prefix_block}}contacts-item">
+							<a href="tel:{{contacts.phone2_tel}}" class="{{prefix_block}}phone">{{contacts.phone2}}</a>
+						</div>
+					</div>
 				</div>
 			</div>
-			<div class="cols {{prefix_block}}soc-cols">				
+			<div class="cols {{prefix_block}}cols  is--btn">
+				<button type="button" class="btn-site to--bg btn-arrow  btn-footer" data-toggle="modal" data-target="#modal-order">
+					Заказ по индивидуальному проекту
+					<span>[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="arrow-next" ]]</span>
+				</button>
+			</div>			
+			<div class="cols {{prefix_block}}cols  is--soc">				
 				[[azbntple 
 					tpl="/src/block/site/default/social/.html"
 					class="social-block" 
@@ -17,7 +29,7 @@
 					prefix_block="footer__social-"
 				]] 
 			</div>
-			<div class="cols {{prefix_block}}dorohovdesign-cols">
+			<div class="cols {{prefix_block}}cols  is--dorohovdesign">
 				<div class="row {{prefix_block}}dorohovdesign__row"> 
 					<div class="cols">
 						<div>Создание сайта</div>

@@ -1,10 +1,11 @@
 .catalog-item-page{}
 ._cip__{
 	&row{
+		align-items: flex-start;
 		flex-wrap: wrap;
 		margin-top: -30px;
 		@media @media-device {margin-bottom: 30px;}
-		@media @media-screen {margin-bottom: 2.2vw;}
+		@media @media-screen {margin-bottom: 5.5vw;}
 	}
 	&cols{
 		padding-top: 30px;
@@ -12,11 +13,12 @@
 		&.cols-2{
 			@media @media-size-xs-l{.makeCols(6, 12);}
 			@media @media-size-xxs{.makeCols(12, 12);}
-			@media @media-size-sm{.makeCols(4, 12);}
+			@media @media-size-sm{.makeCols(4, 12)}
 			@media @media-screen{.makeCols(2.4, 12);}
 		}
 		&.cols-7{
-			@media @media-device{.makeCols(12, 12);}
+			@media @media-device{.makeCols(12, 12); margin-bottom: 40px;}
+			@media @media-size-xs{margin-bottom: 25px;}
 			@media @media-screen{.makeCols(7, 12);}
 		}
 		&.cols-5{

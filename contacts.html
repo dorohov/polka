@@ -58,8 +58,14 @@
 							</li>		 	
 							<li class="navbar__nav-item">
 								<a href="/about.html" class="navbar__nav-link">О компании</a> 
+							</li>	 	
+							<li class="navbar__nav-item">
+								<a href="/catalog.html" class="navbar__nav-link">Каталог элементов</a> 
+							</li> 	
+							<li class="navbar__nav-item">
+								<a href="/catalog-ready.html" class="navbar__nav-link">Готовые решения</a> 
 							</li>
-							<li class="navbar__nav-item dropdown">
+							<!--<li class="navbar__nav-item dropdown">
 								<a href="#" class="navbar__nav-link dropdown-toggle" data-toggle="dropdown">
 									<span class="_icon"><svg class="icon-svg icon-arrow-down" role="img">
 	<use xlink:href="/img/svg/sprite.svg#arrow-down"></use>
@@ -73,9 +79,10 @@
 										<a href="/catalog-ready.html" class="navbar__dropdown-link">Готовые решения</a>
 									</li>
 								</ul>
+							</li>-->
 									 	
 							<li class="navbar__nav-item">
-								<a href="/projects.html" class="navbar__nav-link">Реализованные проекты</a> 
+								<a href="/projects.html" class="navbar__nav-link">Наши проекты</a> 
 							</li>	 	
 							<li class="navbar__nav-item">
 								<a href="/delivery.html" class="navbar__nav-link">Доставка и оплата</a> 
@@ -167,15 +174,29 @@
 		<footer class="footer-site">	
 	<div class="container footer__container">
 		<div class="row footer__row">			
-			<div class="cols footer__contacts-cols">
-				<div class="footer__contacts-item">
-					<a href="tel:+79102088790" class="footer__phone">+7 (910) 208-87-90</a>
-				</div>
-				<div class="footer__contacts-item">
-					<a href="tel:+79102087684" class="footer__phone">+7 (910) 208-76-84</a>
+			<div class="cols footer__cols  is--contacts">
+				<div class="row footer__contacts-row">	
+					<div class="cols footer__contacts-cols">	
+						<div class="footer__contacts-item">
+							<a href="tel:+79102088790" class="footer__phone">+7 (910) 208-87-90</a>
+						</div>
+					</div>
+					<div class="cols footer__contacts-cols">	
+						<div class="footer__contacts-item">
+							<a href="tel:+79102087684" class="footer__phone">+7 (910) 208-76-84</a>
+						</div>
+					</div>
 				</div>
 			</div>
-			<div class="cols footer__soc-cols">				
+			<div class="cols footer__cols  is--btn">
+				<button type="button" class="btn-site to--bg btn-arrow  btn-footer" data-toggle="modal" data-target="#modal-order">
+					Заказ по индивидуальному проекту
+					<span><svg class="icon-svg icon-arrow-next" role="img">
+	<use xlink:href="/img/svg/sprite.svg#arrow-next"></use>
+</svg></span>
+				</button>
+			</div>			
+			<div class="cols footer__cols  is--soc">				
 				<div class="social-block">
 	<div class="row social__row footer__social-row">
 		<div class="cols footer__social-cols">
@@ -202,7 +223,7 @@
 	</div>
 </div>  
 			</div>
-			<div class="cols footer__dorohovdesign-cols">
+			<div class="cols footer__cols  is--dorohovdesign">
 				<div class="row footer__dorohovdesign__row"> 
 					<div class="cols">
 						<div>Создание сайта</div>

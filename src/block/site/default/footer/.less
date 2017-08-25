@@ -31,12 +31,44 @@
 		@media @media-size-xs{padding-bottom: 10px;}
 	}
 	&row{
-		justify-content: space-between;
-		align-items: center;		
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;	
+		margin-top: -15px;	
+		@media @media-notsmart {
+			justify-content: space-between;
+		}
+	}
+	&cols{
+		padding-top: 15px;
+		&.is--contacts{
+			@media @media-device{max-width: 180px}
+			@media @media-size-md{width: 18%;}
+			@media @media-screen-lg{width: 30%;}
+			//@media @media-size-xxl{width: 34%;}
+		}
+		&.is--btn{
+			@media @media-size-md{width: 34%;}
+			@media @media-screen-lg{width: 30%;}
+			//@media @media-size-xxl{width: 26%;}
+		}
+		&.is--soc{
+			@media @media-size-md{width: 18%;}
+			@media @media-screen-lg{width: 15%;}
+		}
+		&.is--dorohovdesign{
+			font-size: @b-fs - 2px;
+			@media @media-device {
+				.makeCols(12, 12);
+			}
+			@media @media-size-md{width: 30%;}
+			@media @media-screen-lg{width: 25%;}
+		}
+	}
+	&contacts-row{
+		flex-wrap: wrap;
 	}
 	&contacts-cols{
-		@media @media-size-xs{margin-bottom: 15px;}
-		@media @media-screen{width: 30%;}
 	}
 	&contacts-item{
 		margin-bottom: 5px;
@@ -60,14 +92,17 @@
 		@media @media-screen{width: 30%;}
 	}
 	&dorohovdesign__row{
-		align-items: center;
-		justify-content: flex-end;
+		align-items: center;		
 		margin: 0 -5px;
+		justify-content: center;
+		@media @media-screen {
+			justify-content: flex-end;
+		}
 		//@media @media-size-sm-p{justify-content: center; padding-top: 20px;}
 		//@media @media-size-md{flex-wrap: wrap; text-align: center;}
 		> .cols{
 			padding: 0 5px;
-			@media @media-size-md{width: 100%;}
+			//@media @media-size-md{width: 100%;}
 		}
 	}
 	&dorohovdesign__logo{

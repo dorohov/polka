@@ -5,8 +5,35 @@
 		margin-top: -30px;
 		@media @media-device {margin-bottom: 30px;}
 		@media @media-screen {margin-bottom: 2.2vw;}
+		&.is--nomargin{margin-bottom: 0}		
 	}
 	&cols{
+		padding-top: 30px;
+		&.is--cols-3{
+			@media @media-device-lg {
+				padding: 0;
+				width: 0;
+			}
+			@media @media-screen-lg {
+				.makeCols(3, 12);
+			}
+		}
+		&.is--cols-9{
+			@media @media-device-lg {
+				.makeCols(12, 12);
+			}
+			@media @media-screen-lg {
+				.makeCols(9, 12);
+			}
+		}
+	}
+	&card-row{
+		flex-wrap: wrap;
+		margin-top: -30px;
+		@media @media-device {margin-bottom: 30px;}
+		@media @media-screen {margin-bottom: 2.2vw;}
+	}
+	&card-cols{
 		padding-top: 30px;
 		&.cols-3{
 			@media @media-size-xs{.makeCols(6, 12);}
@@ -19,6 +46,13 @@
 			@media @media-size-xs{.makeCols(6, 12);}
 			@media @media-size-xxs{.makeCols(12, 12);}
 			@media @media-notsmart{.makeCols(6, 12);}
+		}
+		&.is--cols-4{
+			@media @media-size-xs{.makeCols(6, 12);}
+			@media @media-size-xxs{.makeCols(12, 12);}
+			@media @media-size-sm{.makeCols(6, 12);}
+			@media @media-screen{.makeCols(4, 12);}
+			@media @media-size-md{.makeCols(6, 12);}
 		}
 	}
 }

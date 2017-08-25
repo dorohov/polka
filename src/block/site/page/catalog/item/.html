@@ -10,8 +10,10 @@
 		]]
 		<div class="row {{prefix_block}}row">
 			<div class="cols {{prefix_block}}cols cols-7">
-				<a href="{{url-path-img}}/temp/catalog-item1-lg.jpg" class="{{prefix_block}}preview" data-fancybox="gallery-preview" style="background-image: url({{url-path-img}}/temp/catalog-item1-lg.jpg)">
-				</a>
+				[[azbntple 
+					tpl="/src/block/site/default/catalog/carousel.html" 
+					block_prefix="catalog-carousel__"  
+				]]
 			</div>
 			<div class="cols {{prefix_block}}cols cols-5">				
 				[[azbntple 
@@ -25,7 +27,7 @@
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, rem perspiciatis cum aspernatur ipsum quas quae sit unde quo laudantium enim quod ut in, iste ab ex minima, maiores totam.</p>
 				</div>				
 				<div class="row {{prefix_block}}filter-row">
-					<div class="cols {{prefix_block}}filter-cols cols-12">
+					<!--<div class="cols {{prefix_block}}filter-cols cols-12">
 						[[azbntple 
 							tpl="/src/block/site/default/catalog/filter/material.html" 
 							prefix_filter="catalog-filter__"
@@ -35,7 +37,7 @@
 							item2_filter="Металл"
 							item3_filter="Стекло"
 						]]
-					</div>
+					</div>-->
 					<div class="cols {{prefix_block}}filter-cols">
 						[[azbntple 
 							tpl="/src/block/site/default/catalog/filter/collapse-color.html" 
@@ -43,8 +45,10 @@
 							prefix_block="_cip__"  
 							heading_filter="Цвет"
 							dropdown_filter="img"
-							color_img_filter="/temp/catalog-color.jpg"
+							color_img_filter="/temp/catalog-color.png"
 							color_name_filter="Орех"
+							color_img_filter_white="/temp/catalog-color-white.png"
+							color_name_filter_white="Белый"
 						]]
 					</div>
 					<div class="cols {{prefix_block}}filter-cols">
@@ -102,7 +106,7 @@
 						prefix_block="_cp__" 
 						catalog_prefix="catalog-element__" 
 						catalog_class="more"
-						catalog_preview="/temp/catalog-item1.jpg"
+						catalog_preview="/temp/catalog-item1-485x290.png"
 						catalog_link="/catalog-item.html"
 						catalog_heading="Прямые полки"
 						catalog_cost="500"
@@ -114,7 +118,7 @@
 						prefix_block="_cp__" 
 						catalog_prefix="catalog-element__" 
 						catalog_class="more"
-						catalog_preview="/temp/catalog-item1.jpg"
+						catalog_preview="/temp/catalog-item1-485x290.png"
 						catalog_link="/catalog-item.html"
 						catalog_heading="Прямые полки"
 						catalog_cost="500"
@@ -126,7 +130,7 @@
 						prefix_block="_cp__" 
 						catalog_prefix="catalog-element__" 
 						catalog_class="more"
-						catalog_preview="/temp/catalog-item1.jpg"
+						catalog_preview="/temp/catalog-item1-485x290.png"
 						catalog_link="/catalog-item.html"
 						catalog_heading="Прямые полки"
 						catalog_cost="500"
@@ -138,7 +142,7 @@
 						prefix_block="_cp__" 
 						catalog_prefix="catalog-element__" 
 						catalog_class="more"
-						catalog_preview="/temp/catalog-item1.jpg"
+						catalog_preview="/temp/catalog-item1-485x290.png"
 						catalog_link="/catalog-item.html"
 						catalog_heading="Прямые полки"
 						catalog_cost="500"
@@ -150,7 +154,7 @@
 						prefix_block="_cp__" 
 						catalog_prefix="catalog-element__" 
 						catalog_class="more"
-						catalog_preview="/temp/catalog-item1.jpg"
+						catalog_preview="/temp/catalog-item1-485x290.png"
 						catalog_link="/catalog-item.html"
 						catalog_heading="Прямые полки"
 						catalog_cost="500"

@@ -58,8 +58,14 @@
 							</li>		 	
 							<li class="navbar__nav-item">
 								<a href="/about.html" class="navbar__nav-link">О компании</a> 
+							</li>	 	
+							<li class="navbar__nav-item">
+								<a href="/catalog.html" class="navbar__nav-link">Каталог элементов</a> 
+							</li> 	
+							<li class="navbar__nav-item">
+								<a href="/catalog-ready.html" class="navbar__nav-link">Готовые решения</a> 
 							</li>
-							<li class="navbar__nav-item dropdown">
+							<!--<li class="navbar__nav-item dropdown">
 								<a href="#" class="navbar__nav-link dropdown-toggle" data-toggle="dropdown">
 									<span class="_icon"><svg class="icon-svg icon-arrow-down" role="img">
 	<use xlink:href="/img/svg/sprite.svg#arrow-down"></use>
@@ -73,9 +79,10 @@
 										<a href="/catalog-ready.html" class="navbar__dropdown-link">Готовые решения</a>
 									</li>
 								</ul>
+							</li>-->
 									 	
 							<li class="navbar__nav-item">
-								<a href="/projects.html" class="navbar__nav-link">Реализованные проекты</a> 
+								<a href="/projects.html" class="navbar__nav-link">Наши проекты</a> 
 							</li>	 	
 							<li class="navbar__nav-item">
 								<a href="/delivery.html" class="navbar__nav-link">Доставка и оплата</a> 
@@ -130,8 +137,42 @@
 </div>
 		<div class="row _cip__row">
 			<div class="cols _cip__cols cols-7">
-				<a href="/img/temp/catalog-item1-lg.jpg" class="_cip__preview" data-fancybox="gallery-preview" style="background-image: url(/img/temp/catalog-item1-lg.jpg)">
-				</a>
+				<div id="carousel-example-generic" class="catalog-carousel__carousel carousel slide " data-ride="carousel">
+	<ol class="catalog-carousel__indicators carousel-indicators">
+		<li data-target="#carousel-example-generic" data-slide-to="0" class="active catalog-carousel__indicators-item "><img src="/img/temp/catalog-item1-145x87.jpg" alt=""></li>
+		<li data-target="#carousel-example-generic" data-slide-to="1" class="catalog-carousel__indicators-item "><img src="/img/temp/catalog-item1-145x87.jpg" alt=""></li>
+		<li data-target="#carousel-example-generic" data-slide-to="2" class="catalog-carousel__indicators-item "><img src="/img/temp/catalog-item1-145x87.jpg" alt=""></li>
+		<li data-target="#carousel-example-generic" data-slide-to="3" class="catalog-carousel__indicators-item "><img src="/img/temp/catalog-item1-145x87.jpg" alt=""></li>
+		<li data-target="#carousel-example-generic" data-slide-to="4" class="catalog-carousel__indicators-item "><img src="/img/temp/catalog-item1-145x87.jpg" alt=""></li>
+	</ol>
+	<div class="catalog-carousel__inner carousel-inner" role="listbox">
+		<div class="item active">
+			<img src="/img/temp/catalog-item1-935x560.jpg" alt="">
+		</div>
+		<div class="item">
+			<img src="/img/temp/catalog-item1-935x560.jpg" alt="">
+		</div>
+		<div class="item">
+			<img src="/img/temp/catalog-item1-935x560.jpg" alt="">
+		</div>
+		<div class="item">
+			<img src="/img/temp/catalog-item1-935x560.jpg" alt="">
+		</div>
+		<div class="item">
+			<img src="/img/temp/catalog-item1-935x560.jpg" alt="">
+		</div>
+	</div>
+	<a class="catalog-carousel__control left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+		<svg class="icon-svg icon-arrow-left" role="img">
+	<use xlink:href="/img/svg/sprite.svg#arrow-left"></use>
+</svg>
+	</a>
+	<a class="catalog-carousel__control right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+		<svg class="icon-svg icon-arrow-right" role="img">
+	<use xlink:href="/img/svg/sprite.svg#arrow-right"></use>
+</svg>
+	</a>
+</div>
 			</div>
 			<div class="cols _cip__cols cols-5">				
 				<div class="page-header-block catalog-item">
@@ -142,7 +183,7 @@
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, rem perspiciatis cum aspernatur ipsum quas quae sit unde quo laudantium enim quod ut in, iste ab ex minima, maiores totam.</p>
 				</div>				
 				<div class="row _cip__filter-row">
-					<div class="cols _cip__filter-cols cols-12">
+					<!--<div class="cols _cip__filter-cols cols-12">
 						<div class="catalog-filter">
 	<div class="row catalog-filter__row">
 		<div class="cols catalog-filter__cols">
@@ -157,7 +198,7 @@
 		</div>
 	</div>
 </div>
-					</div>
+					</div>-->
 					<div class="cols _cip__filter-cols">
 						<div class="catalog-filter">
 	<div class="row catalog-filter__row">
@@ -166,53 +207,71 @@
 		</div>
 		<div class="cols catalog-filter__cols">
 			<div class="dropdown catalog-filter__dropdown">
-				<a data-toggle="dropdown" href="#">
+				<a data-toggle="dropdown" href="#" class="catalog-filter__dropdown-link">
 					<span class="catalog-filter__dropdown-icon"><svg class="icon-svg icon-arrow-down" role="img">
 	<use xlink:href="/img/svg/sprite.svg#arrow-down"></use>
 </svg></span>
 					Орех
 				</a>
-				<div class="dropdown-menu catalog-filter__dropdown-menu  img">
-					<div class="mCustomScrollbar scroller" data-mcs-theme="black-light">
+				<div class="dropdown-menu catalog-filter__dropdown-menu  img  is--color  ">
+					<!--<div class="mCustomScrollbar scroller" data-mcs-theme="black-light">-->
 						<div class="row catalog-filter__dropdown-row">
 							<div class="cols catalog-filter__dropdown-cols">
 								<a href="#" class="catalog-filter__dropdown-color">
-									<div class="catalog-filter__dropdown-color-preview"><img src="/img/temp/catalog-color.jpg" alt=""></div>
-									<div>Орех</div>
+									<div class="catalog-filter__dropdown-color-preview"><img src="/img/temp/catalog-color.png" alt=""></div>
+									<div class="catalog-filter__dropdown-color-name">Орех</div>
 								</a>
 							</div>
 							<div class="cols catalog-filter__dropdown-cols">
 								<a href="#" class="catalog-filter__dropdown-color">
-									<div class="catalog-filter__dropdown-color-preview"><img src="/img/temp/catalog-color.jpg" alt=""></div>
-									<div>Орех</div>
+									<div class="catalog-filter__dropdown-color-preview"><img src="/img/temp/catalog-color.png" alt=""></div>
+									<div class="catalog-filter__dropdown-color-name">Орех</div>
 								</a>
 							</div>
 							<div class="cols catalog-filter__dropdown-cols">
 								<a href="#" class="catalog-filter__dropdown-color">
-									<div class="catalog-filter__dropdown-color-preview"><img src="/img/temp/catalog-color.jpg" alt=""></div>
-									<div>Орех</div>
+									<div class="catalog-filter__dropdown-color-preview"><img src="/img/temp/catalog-color.png" alt=""></div>
+									<div class="catalog-filter__dropdown-color-name">Орех</div>
 								</a>
 							</div>
 							<div class="cols catalog-filter__dropdown-cols">
 								<a href="#" class="catalog-filter__dropdown-color">
-									<div class="catalog-filter__dropdown-color-preview"><img src="/img/temp/catalog-color.jpg" alt=""></div>
-									<div>Орех</div>
+									<div class="catalog-filter__dropdown-color-preview"><img src="/img/temp/catalog-color.png" alt=""></div>
+									<div class="catalog-filter__dropdown-color-name">Орех</div>
 								</a>
 							</div>
 							<div class="cols catalog-filter__dropdown-cols">
 								<a href="#" class="catalog-filter__dropdown-color">
-									<div class="catalog-filter__dropdown-color-preview"><img src="/img/temp/catalog-color.jpg" alt=""></div>
-									<div>Орех</div>
+									<div class="catalog-filter__dropdown-color-preview"><img src="/img/temp/catalog-color.png" alt=""></div>
+									<div class="catalog-filter__dropdown-color-name">Орех</div>
+								</a>
+							</div>
+							<div class="cols catalog-filter__dropdown-cols">
+								<a href="#" class="catalog-filter__dropdown-color  is--active">
+									<div class="catalog-filter__dropdown-color-preview"><img src="/img/temp/catalog-color.png" alt=""></div>
+									<div class="catalog-filter__dropdown-color-name">Орех</div>
 								</a>
 							</div>
 							<div class="cols catalog-filter__dropdown-cols">
 								<a href="#" class="catalog-filter__dropdown-color">
-									<div class="catalog-filter__dropdown-color-preview"><img src="/img/temp/catalog-color.jpg" alt=""></div>
-									<div>Орех</div>
+									<div class="catalog-filter__dropdown-color-preview"><img src="/img/temp/catalog-color.png" alt=""></div>
+									<div class="catalog-filter__dropdown-color-name">Орех</div>
+								</a>
+							</div>
+							<div class="cols catalog-filter__dropdown-cols">
+								<a href="#" class="catalog-filter__dropdown-color">
+									<div class="catalog-filter__dropdown-color-preview"><img src="/img/temp/catalog-color.png" alt=""></div>
+									<div class="catalog-filter__dropdown-color-name">Орех</div>
+								</a>
+							</div>
+							<div class="cols catalog-filter__dropdown-cols  ">
+								<a href="#" class="catalog-filter__dropdown-color  is--white">
+									<div class="catalog-filter__dropdown-color-preview"><img src="/img/temp/catalog-color-white.png" alt=""></div>
+									<div class="catalog-filter__dropdown-color-name">Белый</div>
 								</a>
 							</div>
 						</div>
-					</div>
+					<!-- </div> -->
 				</div>
 			</div>
 		</div>
@@ -227,7 +286,7 @@
 		</div>
 		<div class="cols catalog-filter__cols">
 			<div class="dropdown catalog-filter__dropdown">
-				<a data-toggle="dropdown" href="#">
+				<a data-toggle="dropdown" href="#" class="catalog-filter__dropdown-link">
 					<span class="catalog-filter__dropdown-icon"><svg class="icon-svg icon-arrow-down" role="img">
 	<use xlink:href="/img/svg/sprite.svg#arrow-down"></use>
 </svg></span>
@@ -263,7 +322,7 @@
 		</div>
 		<div class="cols catalog-filter__cols">
 			<div class="dropdown catalog-filter__dropdown">
-				<a data-toggle="dropdown" href="#">
+				<a data-toggle="dropdown" href="#" class="catalog-filter__dropdown-link">
 					<span class="catalog-filter__dropdown-icon"><svg class="icon-svg icon-arrow-down" role="img">
 	<use xlink:href="/img/svg/sprite.svg#arrow-down"></use>
 </svg></span>
@@ -335,7 +394,7 @@
 			<div class="row _cip__row">
 				<div class="cols _cip__cols cols-2">
 					<div class="catalog-element more">	
-	<a href="/catalog-item.html" class="catalog-element__preview" style="background-image: url(/img/temp/catalog-item1.jpg);">
+	<a href="/catalog-item.html" class="catalog-element__preview" style="background-image: url(/img/temp/catalog-item1-485x290.png);">
 	</a>
 	<div class="catalog-element__note">
 		<h4 class="catalog-element__heading">Прямые полки</h4>
@@ -355,7 +414,7 @@
 				</div>
 				<div class="cols _cip__cols cols-2">
 					<div class="catalog-element more">	
-	<a href="/catalog-item.html" class="catalog-element__preview" style="background-image: url(/img/temp/catalog-item1.jpg);">
+	<a href="/catalog-item.html" class="catalog-element__preview" style="background-image: url(/img/temp/catalog-item1-485x290.png);">
 	</a>
 	<div class="catalog-element__note">
 		<h4 class="catalog-element__heading">Прямые полки</h4>
@@ -375,7 +434,7 @@
 				</div>
 				<div class="cols _cip__cols cols-2">
 					<div class="catalog-element more">	
-	<a href="/catalog-item.html" class="catalog-element__preview" style="background-image: url(/img/temp/catalog-item1.jpg);">
+	<a href="/catalog-item.html" class="catalog-element__preview" style="background-image: url(/img/temp/catalog-item1-485x290.png);">
 	</a>
 	<div class="catalog-element__note">
 		<h4 class="catalog-element__heading">Прямые полки</h4>
@@ -395,7 +454,7 @@
 				</div>
 				<div class="cols _cip__cols cols-2">
 					<div class="catalog-element more">	
-	<a href="/catalog-item.html" class="catalog-element__preview" style="background-image: url(/img/temp/catalog-item1.jpg);">
+	<a href="/catalog-item.html" class="catalog-element__preview" style="background-image: url(/img/temp/catalog-item1-485x290.png);">
 	</a>
 	<div class="catalog-element__note">
 		<h4 class="catalog-element__heading">Прямые полки</h4>
@@ -415,7 +474,7 @@
 				</div>
 				<div class="cols _cip__cols cols-2">
 					<div class="catalog-element more">	
-	<a href="/catalog-item.html" class="catalog-element__preview" style="background-image: url(/img/temp/catalog-item1.jpg);">
+	<a href="/catalog-item.html" class="catalog-element__preview" style="background-image: url(/img/temp/catalog-item1-485x290.png);">
 	</a>
 	<div class="catalog-element__note">
 		<h4 class="catalog-element__heading">Прямые полки</h4>
@@ -441,15 +500,29 @@
 		<footer class="footer-site">	
 	<div class="container footer__container">
 		<div class="row footer__row">			
-			<div class="cols footer__contacts-cols">
-				<div class="footer__contacts-item">
-					<a href="tel:+79102088790" class="footer__phone">+7 (910) 208-87-90</a>
-				</div>
-				<div class="footer__contacts-item">
-					<a href="tel:+79102087684" class="footer__phone">+7 (910) 208-76-84</a>
+			<div class="cols footer__cols  is--contacts">
+				<div class="row footer__contacts-row">	
+					<div class="cols footer__contacts-cols">	
+						<div class="footer__contacts-item">
+							<a href="tel:+79102088790" class="footer__phone">+7 (910) 208-87-90</a>
+						</div>
+					</div>
+					<div class="cols footer__contacts-cols">	
+						<div class="footer__contacts-item">
+							<a href="tel:+79102087684" class="footer__phone">+7 (910) 208-76-84</a>
+						</div>
+					</div>
 				</div>
 			</div>
-			<div class="cols footer__soc-cols">				
+			<div class="cols footer__cols  is--btn">
+				<button type="button" class="btn-site to--bg btn-arrow  btn-footer" data-toggle="modal" data-target="#modal-order">
+					Заказ по индивидуальному проекту
+					<span><svg class="icon-svg icon-arrow-next" role="img">
+	<use xlink:href="/img/svg/sprite.svg#arrow-next"></use>
+</svg></span>
+				</button>
+			</div>			
+			<div class="cols footer__cols  is--soc">				
 				<div class="social-block">
 	<div class="row social__row footer__social-row">
 		<div class="cols footer__social-cols">
@@ -476,7 +549,7 @@
 	</div>
 </div>  
 			</div>
-			<div class="cols footer__dorohovdesign-cols">
+			<div class="cols footer__cols  is--dorohovdesign">
 				<div class="row footer__dorohovdesign__row"> 
 					<div class="cols">
 						<div>Создание сайта</div>
