@@ -538,13 +538,15 @@
 			padding: 5px;
 		}
 		&.left{
-			left: 2vw;
+			left: 0;
+			@media @media-screen {left: 2vw;}
 			&:hover{
 				transform: translate(-5px,-50%);
 			}
 		}
 		&.right{
-			right: 2vw;
+			right: 0;
+			@media @media-screen {right: 2vw;}
 			&:hover{
 				transform: translate(5px,-50%);
 			}
