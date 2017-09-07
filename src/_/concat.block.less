@@ -966,7 +966,7 @@
 		}
 		&.is--white{
 			&::before{
-				background-color: #7f7f7f;
+				background-color: #b3b3b3;
 			}
 		}
 		&.active{
@@ -987,7 +987,7 @@
 		height: 250px;	
 		background-color: #e5e5e5;
 		&.is--white{
-			background-color: #7f7f7f;
+			background-color: #b3b3b3;
 		}
 		@media @media-size-xs-l{
 			height: 300px;
@@ -1006,6 +1006,10 @@
 			top: 50%;
 			left: 50%;
 			transform: translate(-50%, -50%);
+			padding: 15px;
+			@media @media-screen {
+				padding: 30px;
+			}
 		}
 	}
 	&control{
