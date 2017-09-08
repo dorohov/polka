@@ -1,6 +1,6 @@
 function initMap() {       
-	var coordOffice = {lat: 52.967100, lng: 36.063229},
-		zoom_map_office = 18,
+	var coordOffice = {lat: 53.010965, lng: 36.109211},//{lat: 52.967100, lng: 36.063229},
+		zoom_map_office = 15,
 		mapOptionsOffice = {
 			zoom: zoom_map_office,
 			center: new google.maps.LatLng(coordOffice.lat, coordOffice.lng),
@@ -21,7 +21,7 @@ function initMap() {
         scale: 3
     };
 
-	var	zenitOfficeCoord = {lat: 52.967100, lng: 36.063229};
+	var	zenitOfficeCoord = {lat: 53.012965, lng: 36.109211};
 
 	var 
 		zenitOffice = new google.maps.Marker({
